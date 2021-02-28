@@ -1,1 +1,52 @@
 /* You can add global styles to this file, and also import other style files */
+
+// media Queries Start here
+// @media (min-width: 1200px) {
+//     .container {
+//         width: 1170px;
+//     }
+// }
+
+// @media (min-width: 992px){
+// .container {
+//     width: 970px;
+// }
+// }
+// @media (min-width: 768px) {
+// .container {
+//     width: 750px;
+// }
+// }
+@media (min-width: 768px) {
+.top-bar .active, #header .menu .navbar-nav>li>.active {
+    color: #f09329;
+    font-weight: bold;
+}
+}
+@media (min-width: 768px) {
+.topbar-a {
+    color: white;
+    padding: 0 15px;
+    font-weight: bold;
+}
+}
+@media (min-width: 768px) {
+.navbar-nav {
+    float: left;
+    margin: 0;
+}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+.visible-sm {
+    display: block !important;
+}
+}
+@media (min-width: 768px) and (max-width: 991px){
+.hidden-sm {
+    display: none !important;
+}
+}
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
