@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Inject, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { BaseComponent } from '../common/baseCmp';
+import { ContentHelper } from '../services/contentHelper';
 
 @Component({
   selector: 'app-main',
@@ -7,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainComponent implements OnInit {
 
-  constructor() { }
+ 
 
   ngOnInit(): void {
   }

@@ -7,6 +7,9 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { MainComponent } from './main/main.component';
 import { HomeComponent } from './main/home/home.component';
+import { ContentResolver } from './services/contentResolver';
+import { HttpClientModule } from '@angular/common/http';
+import { ContentHelper } from './services/contentHelper';
 
 @NgModule({
   declarations: [
@@ -18,9 +21,10 @@ import { HomeComponent } from './main/home/home.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [ContentResolver, ContentHelper],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
