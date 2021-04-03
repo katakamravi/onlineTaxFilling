@@ -6,7 +6,9 @@ import { ContentResolver } from './services/contentResolver';
 const routes: Routes = [
   {path: 'home', component: HomeComponent,
    resolve: {content: ContentResolver}},
-  {path: '', redirectTo: '/home', pathMatch: 'full'}
+  {path: '', redirectTo: 'home', pathMatch: 'full'},
+  // { path: 'home', loadChildren: '../main/main.module#MainModule' }
+
 ];
 
 @NgModule({

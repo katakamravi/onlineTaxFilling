@@ -1,113 +1,397 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    font-family: 'Fira Sans', sans-serif;
+}
 
-// media Queries Start here
-// @media (min-width: 1200px) {
-//     .container {
-//         width: 1170px;
-//     }
-// }
+.float-right {
+    float: right;
+}
 
-// @media (min-width: 992px){
-// .container {
-//     width: 970px;
-// }
-// }
-// @media (min-width: 768px) {
-// .container {
-//     width: 750px;
-// }
-// }
-@media (min-width: 768px) {
-.top-bar .active, #header .menu .navbar-nav>li>.active {
-    color: #f09329;
-    font-weight: bold;
+.top-bar {
+    background: #555;
+    color: #fff;
+    padding: 10px 0px;
 }
+
+.top-bar ul {
+    margin-bottom: 0;
 }
-@media (min-width: 768px) {
-.topbar-a {
-    color: white;
-    padding: 0 15px;
-    font-weight: bold;
+
+.top-bar ul.social-custom {
+    margin-left: 20px;
 }
+
+.top-bar a.login-btn i,
+.top-bar a.signup-btn i {
+    margin-right: 10px;
 }
-@media (min-width: 768px) {
-.navbar-nav {
-    float: left;
+
+.top-bar ul.social-custom a {
+    text-decoration: none !important;
+    width: 26px;
+    height: 26px;
+    color: #999;
+    text-align: center;
+    border-radius: 50%;
     margin: 0;
 }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-.visible-sm {
-    display: block !important;
-}
-}
-@media (min-width: 768px) and (max-width: 991px){
-.hidden-sm {
-    display: none !important;
-}
-}
-.row {
-    margin-right: -15px;
-    margin-left: -15px;
+
+.top-bar a.login-btn,
+.top-bar a.signup-btn {
+    color: #eee;
+    letter-spacing: 0.1em;
+    text-decoration: none !important;
+    font-weight: 700;
+    margin-right: 20px;
 }
 
-.navbar-nav {
-    flex-direction: row;
+.navbar-default {
+    background: #fff !important;
+    padding: 15px 0px;
 }
 
-#header {
-    background: 0 0;
-    border-radius: 0;
-    max-width: 100%;
-    width: 100%;
+.navbar-default .navbar-nav>li>a {
+    font-weight: 600;
+    color: #454748;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: #56ba4b;
+}
+
+.navbar-default .navbar-nav>.active>a {
+    color: #56ba4b;
+    background: #fff;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover {
+    background: #fff;
+}
+
+.navbar-brand {
+    padding: 7px;
+}
+
+.navbar {
+    margin-bottom: 0px;
+}
+
+.bg-img {
+    background-image: url(https://www.myaccountsconsultant.com/assets/images/slider/Professional-Accounting-Services.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #999;
+    height: 522px;
+    position: relative;
+}
+
+.message {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    top: 30%;
     display: block;
-    border: 0;
-    /* position: absolute; */
-    z-index: 222;
-    margin: 0;
-    padding: 0px /*0 13px*/;
-}
-
-a:hover {
-	color: orange
-}
-
-
-
-#header .menu .navbar-nav>li>a {
-    -webkit-transition: background-color 1s linear;
-    -o-transition: background-color 1s linear;
-    -moz-transition: background-color 1s linear;
-    transition: background-color 1s linear;
-    color: #1d3463;
-    font-size: 13px;
-    /* text-transform: uppercase; */
-    font-family: "Poppins",sans-serif;
-    font-style: normal;
-    outline: 0;
-    font-weight: bold;
-}
-
-#header .menu ul .sub-menu {
-    -webkit-box-shadow: rgba(229,229,229,.7)0 1px 3px;
-    -moz-box-shadow: rgba(229,229,229,.7)0 1px 3px;
-    box-shadow: rgb(229 229 229 / 70%) 1px 1px 3px 1px;
-    background: #fbfbfb;
-    padding: 0;
-    width: 230px;
     position: absolute;
-    top: 150%;
-    left: 0;
-    z-index: 22;
-    display: block !important;
-    visibility: hidden;
-    opacity: 0;
-    transition: all 500ms ease;
-    -moz-transition: all 500ms ease;
-    -webkit-transition: all 500ms ease;
-    -ms-transition: all 500ms ease;
-    -o-transition: all 500ms ease;
-    list-style: none;
-    margin-top: 10px;
+    color: #fff;
+    padding: 0.5em;
+}
 
+.message h1 {
+    font-weight: 700;
+    font-size: 46px;
+}
+
+.message h3 {
+    font-weight: 700;
+}
+
+.message p {
+    font-size: 20px;
+}
+
+.row {
+    margin: 0px;
+}
+
+.icon-box {
+    width: 25%;
+    float: left;
+    margin-top: 25px;
+}
+
+.text-vision {
+    width: 75%;
+    float: left;
+}
+
+.text-vision p {
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    line-height: 1.9;
+}
+
+.text-vision h4 {
+    font-weight: 600;
+    color: #000;
+}
+
+.vision-banner {
+    padding: 55px;
+}
+
+.services-block {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 35px rgb(0 0 0 / 15%);
+    padding: 34px 25px 15px;
+    margin-bottom: 10px;
+}
+
+.mt-4 {
+    margin-top: 20px;
+}
+
+.service-header h3 {
+    color: #000;
+    font-size: 34px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.service-header p {
+    color: #6c6c6c;
+    font-size: 16px;
+    line-height: 1.6em;
+    margin-bottom: 20px;
+}
+
+.service-section {
+    padding: 40px 0px;
+    background-color: #f9f9f9;
+}
+
+.service-section h2 {
+    color: #000;
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 1.3em;
+    margin-bottom: 2px;
+    text-transform: capitalize;
+}
+
+.notice-section-sm {
+    padding: 25px 0;
+    background-image: url(https://www.myaccountsconsultant.com/assets/images/bg/acc-lower-image.jpg) !important;
+}
+
+.notice-section-grey h6 {
+    position: relative;
+    font-size: 26px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.mt-10.right-holder-md {
+    text-align: left;
+    margin-left: 46px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.button-sm {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 15px;
+    padding: 11px 22px 11px 22px;
+}
+
+.primary-button {
+    background: #116466;
+    color: #fff;
+    border-radius: 50PX;
+}
+
+.service-section .text {
+    color: #555555;
+    font-size: 16px;
+    line-height: 1.7em;
+    margin-bottom: 17px;
+}
+
+.site-footer {
+    background-color: #26272b;
+    padding: 45px 0 20px;
+    font-size: 15px;
+    line-height: 24px;
+    color: #737373;
+}
+
+.site-footer hr {
+    border-top-color: #bbb;
+    opacity: 0.5
+}
+
+.site-footer hr.small {
+    margin: 20px 0
+}
+
+.site-footer h6 {
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 5px;
+    letter-spacing: 2px
+}
+
+.site-footer a {
+    color: #d7d5d5;
+}
+
+.site-footer a:hover {
+    color: #fff !important;
+    text-decoration: none;
+}
+
+.footer-links {
+    padding-left: 0;
+    list-style: none
+}
+
+.connect-links {
+    padding-left: 0;
+    list-style: none
+}
+
+.connect-links span {
+    color: #888888;
+    padding-right: 5px;
+}
+
+.footer-links li {
+    display: block
+}
+
+.footer-links a {
+    color: #737373
+}
+
+.footer-links a:active,
+.footer-links a:focus,
+.footer-links a:hover {
+    color: #3366cc;
+    text-decoration: none;
+}
+
+.footer-links.inline li {
+    display: inline-block
+}
+
+.site-footer .social-icons {
+    text-align: right
+}
+
+.site-footer .social-icons a {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 6px;
+    margin-right: 0;
+    border-radius: 100%;
+    background-color: #33353d
+}
+
+.copyright-text {
+    margin: 0
+}
+
+@media (max-width:991px) {
+    .site-footer [class^=col-] {
+        margin-bottom: 30px
+    }
+}
+
+@media (max-width:767px) {
+    .site-footer {
+        padding-bottom: 0
+    }
+    .site-footer .copyright-text,
+    .site-footer .social-icons {
+        text-align: center
+    }
+}
+
+.social-icons {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-bottom: 4px
+}
+
+.social-icons li.title {
+    margin-right: 15px;
+    text-transform: uppercase;
+    color: #96a2b2;
+    font-weight: 700;
+    font-size: 13px
+}
+
+.social-icons a {
+    background-color: #eceeef;
+    color: #818a91;
+    font-size: 16px;
+    display: inline-block;
+    line-height: 44px;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    margin-right: 8px;
+    border-radius: 100%;
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear
+}
+
+.social-icons a:active,
+.social-icons a:focus,
+.social-icons a:hover {
+    color: #fff;
+    background-color: #29aafe
+}
+
+.social-icons.size-sm a {
+    line-height: 34px;
+    height: 34px;
+    width: 34px;
+    font-size: 14px
+}
+
+.social-icons a.facebook:hover {
+    background-color: #3b5998
+}
+
+.social-icons a.twitter:hover {
+    background-color: #00aced
+}
+
+.social-icons a.linkedin:hover {
+    background-color: #007bb6
+}
+
+.social-icons a.dribbble:hover {
+    background-color: #ea4c89
+}
+
+@media (max-width:767px) {
+    .social-icons li.title {
+        display: block;
+        margin-right: 0;
+        font-weight: 600
+    }
 }

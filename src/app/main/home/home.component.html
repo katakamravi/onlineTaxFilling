@@ -1,1 +1,128 @@
-<p>home works!</p>
+<div class="bg-img">
+    <div class="wrapper container">
+        <div class="message">
+            <h1>Online Accounting Services</h1>
+            <p>Fast, reliable and accurate online accounting service helps to</p>
+            <p> make better financial decisions.</p>
+            <h3>Quality services at feasible price.</h3>
+        </div>
+    </div>
+</div>
+
+<section class="service-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <h2>{{content.About.title}}</h2>
+                <div class="text" [innerHtml]="content.About.description">
+                
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div>
+                    <img src="http://www.easytaxconsultancy.in/images/resource/video-img.jpg" class="img-responsive">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section class="service-section">
+    <div class="text-center service-header">
+        <h3>{{content.services.title}}</h3>
+        <p>{{content.services.description}}</p>
+    </div>
+    <div class="container mt-4">    
+        <div class="row ml-0 mr-0">
+            <div class="col-md-6 col-sm-12" *ngFor="let service of content.services.servicesList">
+                <div class="">
+                    <div class="icon-box">
+                        <img src="https://www.myaccountsconsultant.com/assets/images/logos/bookkeeping.png" width="60" height="60">
+                    </div>
+                    <div class="text-vision">
+
+                        <h4>{{service.title}}</h4>
+                        <p>{{service.description}}
+                        </p>
+                        <a href="">{{service.readMore}}</a>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class=" col-lg-4 col-md-6 col-sm-12">
+                <div class="">
+                    <div class="icon-box">
+                        <img src="https://www.myaccountsconsultant.com/assets/images/logos/bookkeeping.png" width="60" height="60">
+                    </div>
+                    <div class="text-vision">
+
+                        <h4>GST Registration</h4>
+                        <p>The Goods & Services Tax (GST) launched on 01-Apr-2017 applies to all Indian service providers (including freelancers), traders and manufacturers, once their supply turnover crosses Rs. 20 lakh. The GST is an all-in-one tax that subsumes a variety of state (VAT, Entertainment Tax, Luxury Tax, Octroi) and central taxes (CST, Service Tax, Excise Duty). GST is to be charged at every step of the supply chain, with complete set-off benefits available.
+                        </p>
+                        <a href="">Read more</a>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-lg-4 col-md-6 col-sm-12">
+                <div class="">
+                    <div class="icon-box">
+                        <img src="https://www.myaccountsconsultant.com/assets/images/logos/bookkeeping.png" width="60" height="60">
+                    </div>
+                    <div class="text-vision">
+
+                        <h4>Amendent Filing</h4>
+                        <p>If you find an error after filing your return, you may need to amend your return. The IRS may correct errors in math on a return and may accept returns without certain forms or schedules. In these instances, there is no need to amend your return! However, do file an amended return if there is a change in your filing status, income, deductions, or credits.
+                        </p>
+                        <a href="">Read more</a>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+    <!-- <div class="container mt-4">
+        <div class="row ml-0 mr-0">
+            <div class=" col-lg-4 col-md-6 col-sm-12">
+                <div class="">
+                    <div class="icon-box">
+                        <img src="https://www.myaccountsconsultant.com/assets/images/logos/bookkeeping.png" width="60" height="60">
+                    </div>
+                    <div class="text-vision">
+
+                        <h4>New Business</h4>
+                        <p>A sole proprietor is the simplest form of an organization. It is very easy and convenient way of doing business. It is the most common form of business in India. It has very minimum registrations and have very minimal regulatory compliance requirement. However, after the business develops, proprietorship does not offer facilities...
+                        </p>
+                        <a href="">Read more</a>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-lg-4 col-md-6 col-sm-12">
+                <div class="">
+                    <div class="icon-box">
+                        <img src="https://www.myaccountsconsultant.com/assets/images/logos/bookkeeping.png" width="60" height="60">
+                    </div>
+                    <div class="text-vision">
+
+                        <h4>TDS Preparation</h4>
+                        <p>TDS Filing Service requires thorough understanding of the tax provisions, where EZTax.in Experts can help you file your TDS Returns with ease. EZTax.in help you in filing the Sale on Property (From-26QB), TDS on Salary (From-24Q), Other payments (Form-26Q) with best & lowest Pricing.
+                        </p>
+                        <a href="">Read more</a>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-lg-4 col-md-6 col-sm-12">
+                <div class="">
+                    <div class="icon-box">
+                        <img src="https://www.myaccountsconsultant.com/assets/images/logos/bookkeeping.png" width="60" height="60">
+                    </div>
+                    <div class="text-vision">
+
+                        <h4>Intellectual Property</h4>
+                        <p>To provide reliable professional services with integrity, excellence and confidentiality in the system of our firm to meet our customer's individual requests.
+                            <p>
+                        </p>
+                        <a href="">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+</section>
