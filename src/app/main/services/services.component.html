@@ -3,7 +3,15 @@
     <p style="margin: 15px;font-family: ui-monospace;font-size: larger;"  [innerHtml]="services?.description"></p>
 
    <h6>Documents Required</h6>
-   <ul>
-       <li *ngFor="let documents of services.DocumentsRequired">{{documents.name}}</li>
-   </ul>
+<ul *ngIf="services?.isGST === false;else other_content;">
+    <li *ngFor="let documents of services.DocumentsRequired">{{documents.name}}</li>
+</ul>
+   <ng-template #other_content>
+       <div *ngFor="let documents of services.DocumentsRequired.categories">
+           <p>{{documents.categoryName}}</p>
+        <ul>
+            <li *ngFor="let doc of documents.documentsRequired">{{doc}}</li>
+        </ul>
+       </div>
+   </ng-template>
 </div>
