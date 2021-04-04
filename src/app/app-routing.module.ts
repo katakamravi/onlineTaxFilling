@@ -8,8 +8,8 @@ const routes: Routes = [
   {path: 'home', component: HomeComponent,
    resolve: {content: ContentResolver}},
   {path: '', redirectTo: 'home', pathMatch: 'full'},
-  {path: 'services', component: ServicesComponent,
-   resolve: {content: ContentResolver}}
+  // // {path: 'services', component: ServicesComponent,
+  //  resolve: {content: ContentResolver}}
   //  { path: '', loadChildren: './main/main.module#MainModule' }
 
 ];

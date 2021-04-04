@@ -87,7 +87,7 @@
             "Amount": 2000
         },
         "TDSPreparation": {
-            "title": "TDSPreparation",
+            "title": "TDS Preparation",
             "description": "Bank statement/passbook for interest on savings account. Interest income statement for fixed deposits. TDS certificate issued by banks and others",
             "DocumentsRequired": [     
             ],

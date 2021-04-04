@@ -1,2 +1,9 @@
-<p>services works!</p>
-{{services?.title}}
+<div>
+    <h1 style="text-align: center;font-family: ui-monospace;">{{services?.title}}</h1>
+    <p style="margin: 15px;font-family: ui-monospace;font-size: larger;"  [innerHtml]="services?.description"></p>
+
+   <h6>Documents Required</h6>
+   <ul>
+       <li *ngFor="let documents of services.DocumentsRequired">{{documents.name}}</li>
+   </ul>
+</div>

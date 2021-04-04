@@ -10,19 +10,20 @@ import { HomeComponent } from './main/home/home.component';
 import { ContentResolver } from './services/contentResolver';
 import { HttpClientModule } from '@angular/common/http';
 import { ContentHelper } from './services/contentHelper';
+import { MainModule } from './main/main.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    MainComponent,
-    HomeComponent
+    MainComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    MainModule
   ],
   providers: [ContentResolver, ContentHelper],
   bootstrap: [AppComponent]

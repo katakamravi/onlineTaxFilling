@@ -17,7 +17,7 @@ import { ServicesComponent } from './services/services.component';
       resolve: {content: ContentResolver}
     },
     {
-      path: '/services',
+      path: 'services',
       component: ServicesComponent,
       resolve: {content: ContentResolver}
     }
