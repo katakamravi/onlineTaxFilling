@@ -1,0 +1,107 @@
+{
+    "services": {
+        "TaxFiling": {
+            "title": "Tax Filing",
+            "description": "Tax Filing is the social and moral duty of every responsible citizen of the country to file tax returns is an annual activity. The government analyses the means and amount of expenditure of the citizens. After determining the tax return, it provides a platform for the people to claim a refund.<br/>",
+            "DocumentsRequired": [
+                {
+                    "name": "Form-16",
+                    "tooltip": "Form-16 is a TDS certificate issued to you by your employer to provide details of the salary paid to you and TDS deducted on it, if any. It is mandatory for your employer to issue Form-16 if your employer has deducted TDS from your salary. If no TDS is deducted from your salary, then you can request your employer to provide you the same."
+                },
+                {
+                    "name": "Tax-saving investment proofs",
+                    "tooltip": "All the tax-saving investments made by you and the expenditures incurred by you eligible for deduction under section 80C, 80CCC and 80CCD(1) during FY2019-20 can help you lower your tax liability. The maximum tax-break you can claim under these three sections combined cannot exceed Rs 1.5 lakh in a financial year."
+                },
+                {
+                    "name": "Aadhaar card",
+                    "tooltip": ""
+                },
+                {
+                    "name": "Salary slips",
+                    "tooltip": "You may need your salary slips, as ITR 2 form released by the income tax department, asks individuals to specify the nature of salary income such as basic, dearness allowance, house rent allowance and so on. "
+                }
+            ],
+            "Amount": 500
+        },
+        "GSTRegistration": {
+            "title": "GST Registration",
+            "description": " Goods & Services Tax (GST) applies to all Indian service providers (including freelancers), traders and manufacturers. A variety of Central taxes like Service Tax, Excise Duty, CST and state taxes like Entertainment Tax, Luxury Tax, Octroi, VAT are absorbed in one tax – GST, implemented on 01.07.2017.  GST is to be charged at every step of the supply chain, with full set-off benefits available. The procedure for GST is entirely online and requires no manual intervention.",
+            "DocumentsRequired": [
+                {
+                    "categories": [
+                        {
+                            "categoryName": "Sole proprietor / Individual",
+                            "documentsRequired": [
+                                "PAN card of the owner",
+                                "Aadhar card of the owner",
+                                "Photograph of the owner (in JPEG format, maximum size – 100 KB)",
+                                "Bank account details*",
+                                "Address proof**"
+                            ]
+                        },
+                        {
+                            "categoryName": "Partnership firm (including LLP)",
+                            "documentsRequired": [
+                                "PAN card of all partners (including managing partner and authorized signatory)",
+                                "Copy of partnership deed",
+                                "Photograph of all partners and authorised signatories (in JPEG format, maximum size – 100 KB)",
+                                "Address proof of partners (Passport, driving license, Voters identity card, Aadhar card etc.)",
+                                "Aadhar card of authorised signatory",
+                                "Proof of appointment of authorized signatory",
+                                "In the case of LLP, registration certificate / Board resolution of LLP",
+                                "Bank account details*",
+                                "Address proof of principal place of business**"
+                            ]
+                        },
+                        {
+                            "categoryName": "Company (Public and Private) (Indian and foreign)",
+                            "documentsRequired": [
+                                "PAN card of Company",
+                                "Certificate of incorporation given by Ministry of Corporate Affairs",
+                                "Memorandum of Association / Articles of Association",
+                                "PAN card and Aadhar card of authorized signatory. The authorised signatory must be an Indian even in case of foreign companies/branch registration",
+                                "PAN card and address proof of all directors of the Company",
+                                "Photograph of all directors and authorised signatory (in JPEG format, maximum size – 100 KB)",
+                                "Board resolution appointing authorised signatory / Any other proof of appointment of authorised signatory (in JPEG format / PDF format, maximum size – 100 KB)",
+                                "Bank account details",
+                                "Address proof of principal place of business"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "Amount": 1000
+        },
+        "AmendentFiling": {
+            "title": "Amendent Filing",
+            "description": "Amendment refers to alteration or addition to any contract, agreement, laws, and regulations. An amendment can also be made by way of an addendum or modification are made to some of the terms of an agreement or contract. In case there are substantial changes, the existing agreement or contract may need to be substituted with a new one.",
+            "DocumentsRequired": [     
+            ],
+            "Amount": 2000
+        },
+        "NewBusiness": {
+            "title": "New Business",
+            "description": "It includes PROPRIETORSHIP, PARTNERSHIP FIRM, PRIVATE LIMITED COMPANY, LIMITED LIABILITY PARTNERSHIP, ONE PERSON COMPANY, PUBLIC LIMITED COMPANY, SECTION 8 COMPANY. To start the businees of mentioned types what are the documents required and amount will classify below.",
+            "DocumentsRequired": [     
+            ],
+            "Amount": 2000
+        },
+        "TDSPreparation": {
+            "title": "TDSPreparation",
+            "description": "Bank statement/passbook for interest on savings account. Interest income statement for fixed deposits. TDS certificate issued by banks and others",
+            "DocumentsRequired": [     
+            ],
+            "Amount": 2000
+        },
+        "IntellectualProperty": {
+            "title": "Intellectual Property",
+            "description": "An intellectual property document is a document which proves intellectual property rights. It is a legal document stating the ownership or rights for intellectual property.",
+            "DocumentsRequired": [ 
+                "Trademark License",
+                "Proof of Patent",
+                "Copyright Ownership"    
+            ],
+            "Amount": 2000
+        }
+    }
+}

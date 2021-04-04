@@ -11,7 +11,6 @@ export class BaseComponent {
         @Inject('componentName') componentName: string = '') {
         this._componentName = componentName;
         this.route.data.pipe(map((data) => data.content)).subscribe((res) => {
-            console.log(res);
             if (res) {
                 this._content = this.setContent(res);
             }

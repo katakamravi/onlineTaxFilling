@@ -16,9 +16,6 @@ export class ContentResolver implements Resolve<any> {
     }
 
     // tslint:disable-next-line:typedef
-    
-
-    
 
 
     // tslint:disable-next-line:typedef
