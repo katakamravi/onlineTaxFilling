@@ -8,18 +8,13 @@
         "description": "We have a team of skilled and experienced Chartered Accountants in India providing quality services ! ",
         "servicesList": [
             {
-                "title": "Tax Filing",
+                "title": "Income Tax Filing",
                 "description": "A GST Return is a document that is required to be filed as per the law with the tax authorities. Under the GST law, a taxpayer has to submit three returns on a monthly basis and one such return annually. All returns have to be filed online. Please note that there is no provision for revising the returns. All invoices of the previous tax period that went unreported must be included in the current month.",
                 "readMore": "Read more"
             },
             {
                 "title": "GST Registration",
                 "description": "The Goods & Services Tax (GST) launched on 01-Apr-2017 applies to all Indian service providers (including freelancers), traders and manufacturers, once their supply turnover crosses Rs. 20 lakh. The GST is an all-in-one tax that subsumes a variety of state (VAT, Entertainment Tax, Luxury Tax, Octroi) and central taxes (CST, Service Tax, Excise Duty). GST is to be charged at every step of the supply chain, with complete set-off benefits available.",
-                "readMore": "Read more"
-            },
-            {
-                "title": "Amendent Filing",
-                "description": "If you find an error after filing your return, you may need to amend your return. The IRS may correct errors in math on a return and may accept returns without certain forms or schedules. In these instances, there is no need to amend your return! However, do file an amended return if there is a change in your filing status, income, deductions, or credits.",
                 "readMore": "Read more"
             },
             {
@@ -31,11 +26,6 @@
             {
                 "title": "TDS Preparation",
                 "description": "TDS Filing Service requires thorough understanding of the tax provisions, where EZTax.in Experts can help you file your TDS Returns with ease. EZTax.in help you in filing the Sale on Property (From-26QB), TDS on Salary (From-24Q), Other payments (Form-26Q) with best & lowest Pricing.",
-                "readMore": "Read more"
-            },
-            {
-                "title": "Intellectual Property",
-                "description": "To provide reliable professional services with integrity, excellence and confidentiality in the system of our firm to meet our customer's individual requests.",
                 "readMore": "Read more"
             }
         ]

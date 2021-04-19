@@ -1,0 +1,42 @@
+   <h6>Documents Required</h6>
+<ul *ngIf="services?.isGST === false;else other_content;">
+    <li *ngFor="let documents of services.DocumentsRequired">{{documents.name}}</li>
+</ul>
+   <ng-template #other_content>
+       <div *ngFor="let documents of services.DocumentsRequired.categories">
+           <p>{{documents.categoryName}}</p>
+        <ul>
+            <li *ngFor="let doc of documents.documentsRequired">{{doc}}</li>
+        </ul>
+       </div>
+   </ng-template>
+    <div class="bg-service1-img">
+        <div class="container">
+            <div class="service-message">
+                <h1>{{services?.title}}</h1>
+                <ul>
+                    <li><a href="javascript:void(0)" [routerLink]="['/home']" >Home</a></li>
+                    <li>{{services?.title}}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <section class="service-section-padding">
+        <div class="wpb_wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="title-section">
+                            <h2 class="title">{{services?.title}}</h2>
+                        </div>
+                        <div class="section-heading-line-left"><br></div>
+                        <p><span  [innerHtml]="services?.description"></span></p>
+                    </div>
+                    <div class="col-md-6">
+                        <h2><img src="https://www.myaccountsconsultant.com/assets_old/images/page/Accounts-Payables-Services-%20(1).jpg" alt=" Accounts Payable Services" style="display: block; margin-left: auto; margin-right: auto; margin-top: 10px;" class="img-responsive img-rounded"
+                                width="1000" height="600"></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>

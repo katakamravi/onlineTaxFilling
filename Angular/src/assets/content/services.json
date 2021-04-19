@@ -1,7 +1,7 @@
 {
     "services": {
-        "TaxFiling": {
-            "title": "Tax Filing",
+        "IncomeTaxFiling": {
+            "title": "Income Tax Filing",
             "description": "Tax Filing is the social and moral duty of every responsible citizen of the country to file tax returns is an annual activity. The government analyses the means and amount of expenditure of the citizens. After determining the tax return, it provides a platform for the people to claim a refund.<br/>",
             "DocumentsRequired": [
                 {
