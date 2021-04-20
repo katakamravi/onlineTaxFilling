@@ -1,15 +1,3 @@
-   <h6>Documents Required</h6>
-<ul *ngIf="services?.isGST === false;else other_content;">
-    <li *ngFor="let documents of services.DocumentsRequired">{{documents.name}}</li>
-</ul>
-   <ng-template #other_content>
-       <div *ngFor="let documents of services.DocumentsRequired.categories">
-           <p>{{documents.categoryName}}</p>
-        <ul>
-            <li *ngFor="let doc of documents.documentsRequired">{{doc}}</li>
-        </ul>
-       </div>
-   </ng-template>
     <div class="bg-service1-img">
         <div class="container">
             <div class="service-message">
@@ -35,6 +23,101 @@
                     <div class="col-md-6">
                         <h2><img src="https://www.myaccountsconsultant.com/assets_old/images/page/Accounts-Payables-Services-%20(1).jpg" alt=" Accounts Payable Services" style="display: block; margin-left: auto; margin-right: auto; margin-top: 10px;" class="img-responsive img-rounded"
                                 width="1000" height="600"></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="wrapper">
+        <div class="container-fostrap">
+
+            <div class="content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="card">
+                                <a class="img-card" href="#">
+                                    <img src="https://www.myaccountsconsultant.com/assets/images/page/Sign-contract.jpg" />
+                                </a>
+                                <div class="card-content">
+                                    <h4 class="card-title pl-3">
+                                        <a> Documents Required
+                                      </a>
+                                    </h4>
+                                    <ul class="list-group"  *ngIf="services?.isGST === false;else GST_Reg;">
+                                        <li class="list-group-item border-0 d-flex" *ngFor="let documents of services.DocumentsRequired">
+                                            <div class="me-2">
+                                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZyjSITET-RHh0uN_gXgEwtdvzqJLaqhG6bA&usqp=CAU" alt="">
+                                            </div>
+                                            <div class="">
+                                                {{documents.name}}
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <ng-template #GST_Reg>
+                                        <div *ngFor="let documents of services.DocumentsRequired.categories">
+                                            <p>{{documents.categoryName}}</p>
+                                         <ul>
+                                            <li class="list-group-item border-0 d-flex" *ngFor="let doc of documents.documentsRequired">
+                                                <div class="me-2">
+                                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZyjSITET-RHh0uN_gXgEwtdvzqJLaqhG6bA&usqp=CAU" alt="">
+                                                </div>
+                                                <div class="">
+                                                    {{doc}}
+                                                </div>
+                                            </li>
+                                         </ul>
+                                        </div>
+                                    </ng-template>
+                                </div>
+                                <!-- <div class="card-read-more">
+                                    <a href="http://www.fostrap.com/2016/03/bootstrap-3-carousel-fade-effect.html" class="btn btn-link btn-block">
+                                        Read More
+                                    </a>
+                                </div> -->
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="card">
+
+                                <div class="card-content">
+                                    <h4 class="card-title">
+                                        Stay in touch
+                                    </h4>
+                                    <form role="form" class="mt-4">
+
+                                        <div class="form-group">
+                                            <input type="text" class="form-control input-lg" placeholder="Your Name">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="email" class="form-control input-lg" placeholder="Email Address">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control input-lg" placeholder="Phone Number">
+                                        </div>
+                                        <!-- <div class="form-group">
+                                            <textarea placeholder="Your Message" class="form-control" rows="3"></textarea>
+                                        </div> -->
+                                        <div class="checkbox">
+                                            <label>
+                                              <input type="checkbox"> By clicking Register, you agree to the <a data-toggle="modal" 
+                                              data-target="#terms-condition" >Terms and Conditions</a>
+                                            </label>
+                                        </div>
+                                        <div class="row">
+                                            <div class="mt-2"><input type="submit" value="Submit" class=" submit-form-btn btn btn-primary btn-block btn-lg"></div>
+
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- <div class="card-read-more">
+                                    <a href="https://codepen.io/wisnust10/full/ZWERZK/" class="btn btn-link btn-block">
+                                        Read More
+                                    </a>
+                                </div> -->
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
