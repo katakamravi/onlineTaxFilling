@@ -82,30 +82,29 @@
 
                                 <div class="card-content">
                                     <h4 class="card-title">
-                                        Stay in touch
+                                        Sign Up
                                     </h4>
-                                    <form role="form" class="mt-4">
+                                    <h3 style="font-size: 50px;color: #16181e;text-align: center;font-weight: 700;"> Rs.{{services?.Amount}}</h3>
+                                    <form role="form" class="mt-4" [formGroup]="userForm">
 
                                         <div class="form-group">
-                                            <input type="text" class="form-control input-lg" placeholder="Your Name">
+                                            <input type="text" class="form-control input-lg" placeholder="Your Name" formControlName="userName">
                                         </div>
                                         <div class="form-group">
-                                            <input type="email" class="form-control input-lg" placeholder="Email Address">
+                                            <input type="text" class="form-control input-lg" placeholder="Email Address" formControlName="userEmail">
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" class="form-control input-lg" placeholder="Phone Number">
+                                            <input type="text" class="form-control input-lg" placeholder="Phone Number" formControlName="userMobile">
                                         </div>
-                                        <!-- <div class="form-group">
-                                            <textarea placeholder="Your Message" class="form-control" rows="3"></textarea>
-                                        </div> -->
                                         <div class="checkbox">
                                             <label>
-                                              <input type="checkbox"> By clicking Register, you agree to the <a data-toggle="modal" 
+                                              <input type="checkbox" formControlName="userTerms"> Before Proceeding, you agree to the <a data-toggle="modal" 
                                               data-target="#terms-condition" >Terms and Conditions</a>
                                             </label>
                                         </div>
                                         <div class="row">
-                                            <div class="mt-2"><input type="submit" value="Submit" class=" submit-form-btn btn btn-primary btn-block btn-lg"></div>
+                                            <div class="mt-2"><input type="submit" value="Proceed" class=" submit-form-btn btn btn-primary btn-block btn-lg" [disabled]="userForm.invalid || userForm.value.userTerms === false"
+                                                 (click)="submitUser()"></div>
 
                                         </div>
                                     </form>

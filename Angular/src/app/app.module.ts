@@ -6,11 +6,11 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { MainComponent } from './main/main.component';
-import { HomeComponent } from './main/home/home.component';
 import { ContentResolver } from './services/contentResolver';
 import { HttpClientModule } from '@angular/common/http';
 import { ContentHelper } from './services/contentHelper';
 import { MainModule } from './main/main.module';
+import { WindowRef } from './services/windowRef.service';
 
 @NgModule({
   declarations: [
@@ -25,7 +25,7 @@ import { MainModule } from './main/main.module';
     HttpClientModule,
     MainModule
   ],
-  providers: [ContentResolver, ContentHelper],
+  providers: [ContentResolver, ContentHelper, WindowRef],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { RouterModule } from '@angular/router';
 import { ContentResolver } from '../services/contentResolver';
 import { ServicesComponent } from './services/services.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -22,7 +23,9 @@ import { ServicesComponent } from './services/services.component';
       resolve: {content: ContentResolver}
     }
     ]),
-    CommonModule
+    CommonModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
 })
 export class MainModule { }
