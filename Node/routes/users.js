@@ -6,6 +6,8 @@ const { google } = require("googleapis");
 const { gmail } = require('googleapis/build/src/apis/gmail');
 const OAuth2 = google.auth.OAuth2;
 
+
+
 var instance = new Razorpay({
   key_id: 'rzp_test_2W7iyVeDpzGsDO',
   key_secret: 't3VsISY7rwgY3y8vF25XNykL'
@@ -38,9 +40,9 @@ router.post('/orderid', function (req, res, next) {
 
 
 router.post('/email', function (req, res, next) {
-  const clientId = '996320987644-6a1fdc8tbvftoudbuf3st7pt6dlfk1hu.apps.googleusercontent.com';
-  const clientSecret = 'QSy3IhQblfYsZ-sukWBgm6Kf';
-  const refresh = '1//0g7Jug2SA3r6vCgYIARAAGBASNwF-L9Ir2VDaj-6McDiI3GXmud73C-4eTUmh0BWpthA_uQUsXFLQyr0HG4WteAGP8I1SsuYHaPU';
+  //const clientId = '996320987644-6a1fdc8tbvftoudbuf3st7pt6dlfk1hu.apps.googleusercontent.com';
+  //const clientSecret = 'QSy3IhQblfYsZ-sukWBgm6Kf';
+  //const refresh = '1//0g7Jug2SA3r6vCgYIARAAGBASNwF-L9Ir2VDaj-6McDiI3GXmud73C-4eTUmh0BWpthA_uQUsXFLQyr0HG4WteAGP8I1SsuYHaPU';
 //   const oauth2Client = new OAuth2(
 //     clientId,
 //     clientSecret
@@ -62,52 +64,92 @@ router.post('/email', function (req, res, next) {
   //   }
   // });
  
-  const oauth2Client = new OAuth2(
-    clientId,
-    clientSecret,
+//   const oauth2Client = new OAuth2(
+//     clientId,
+//     clientSecret,
+// );
+
+// oauth2Client.setCredentials({
+//     refresh_token: refresh
+// });
+// const newAccessToken = oauth2Client.getAccessToken()
+// let transporter = nodemailer.createTransport(
+//     {
+//         service: 'Gmail',
+//         auth: {
+//             type: 'OAuth2',
+//             user: 'katakamravishankar@gmail.com',
+//             clientId: clientId,
+//             clientSecret: clientSecret,
+//             refreshToken: refresh,
+//             accessToken: newAccessToken
+//         }
+//     },
+//     {
+//         // default message fields
+
+//         // sender info
+//         from: 'RaviShankar Katakam <katakamravishankar@gmail.com>'
+//     }
+// );
+// var mailOptions = {
+//   from: 'katakamravishankar@gmail.com',
+//   to: req.body.userEmail,
+//   subject: `Contact name: ${req.body.userName}`,
+//   html: `<h1>Contact details</h1>
+// <h2> name:${req.body.userName} </h2><br>
+// <h2> email:${req.body.userEmail} </h2><br>
+// <h2> phonenumber:${req.body.userMobile} </h2><br>`
+// };
+// transporter.sendMail(mailOptions, function (error, response) {
+//   if (error) {
+//     console.log(error);
+//     next(error); // if error occurs send error as response to client
+//   }
+//   else {
+//     console.log('Email sent: ' +response);
+//     res.send({ message: 'Email Sent Successfully', value: response })//if mail is sent successfully send Sent successfully as response
+//   }
+// });
+
+const oauth2Client = new OAuth2(
+    " ", // ClientID
+    " ", // Client Secret
+    " " // Redirect URL
 );
 
 oauth2Client.setCredentials({
-    refresh_token: refresh
+    refresh_token: " "
 });
-const newAccessToken = oauth2Client.getAccessToken()
-let transporter = nodemailer.createTransport(
-    {
-        service: 'Gmail',
-        auth: {
-            type: 'OAuth2',
-            user: 'katakamravishankar@gmail.com',
-            clientId: clientId,
-            clientSecret: clientSecret,
-            refreshToken: refresh,
-            accessToken: newAccessToken
-        }
-    },
-    {
-        // default message fields
+const accessToken = oauth2Client.getAccessToken();
 
-        // sender info
-        from: 'RaviShankar Katakam <katakamravishankar@gmail.com>'
+const smtpTransport = nodemailer.createTransport({
+    service: "gmail",
+    auth: {
+         type: "OAuth2",
+         user: "srinivasguptha.k@gmail.com", 
+         clientId: " ",
+         clientSecret: " ",
+         refreshToken: "",
+         accessToken: accessToken
     }
-);
-var mailOptions = {
-  from: 'katakamravishankar@gmail.com',
-  to: req.body.userEmail,
-  subject: `Contact name: ${req.body.userName}`,
-  html: `<h1>Contact details</h1>
-<h2> name:${req.body.userName} </h2><br>
-<h2> email:${req.body.userEmail} </h2><br>
-<h2> phonenumber:${req.body.userMobile} </h2><br>`
+});
+
+const mailOptions = {
+    from: "srinivasguptha.k@gmail.com",
+    to: `${req.body.userEmail}`,
+    subject: "Testing Mail Id",
+    generateTextFromHTML: true,
+    html: `<h1>Contact details</h1>
+    <h2> name:${req.body.userName} </h2><br>
+    <h2> email:${req.body.userEmail} </h2><br>
+    <h2> phonenumber:${req.body.userMobile} </h2><br>`
+    //text: 'Ingaa Paar Out Put Deko Pola AdiriPola....',
 };
-transporter.sendMail(mailOptions, function (error, response) {
-  if (error) {
-    console.log(error);
-    next(error); // if error occurs send error as response to client
-  }
-  else {
-    console.log('Email sent: ' +response);
-    res.send({ message: 'Email Sent Successfully', value: response })//if mail is sent successfully send Sent successfully as response
-  }
+
+smtpTransport.sendMail(mailOptions, (error, response) => {
+    error ? console.log(error) : console.log(response);
+    smtpTransport.close();
 });
 });
 
