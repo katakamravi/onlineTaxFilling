@@ -1,20 +1,19 @@
 {
     "About": {
-        "title": "About Easy Tax Consultancy Services",
-        "description": "Easy Tax Consultancy Services, a chartered accountant firm, is registered with The Institute of Chartered Accountant of India. It is an accounting and consultancy firm providing a comprehensive range of business advisory services to a wide range of clients from individuals to corporate within and outside India. We take pride in providing dedicated, friendly &amp; personalized service combined with comprehensive advice. <br><br> Our firm is dedicated to the needs of businesses and to achieve their ambitions locally, nationaly and internationaly. We work closely with our clients to interpret their personal and business needs, identify opportunities for growth and minimize the risks."
+        "title": "E-file Income Tax Returns the Smart way in 2019",
+        "description": "e-File Income Tax Return within 5 Minutes"
     },
     "services": {
         "title": "OUR SERVICES",
         "description": "We have a team of skilled and experienced Chartered Accountants in India providing quality services ! ",
-        "servicesList": [
-            {
+        "servicesList": [{
                 "title": "Income Tax Filing",
                 "description": "A GST Return is a document that is required to be filed as per the law with the tax authorities. Under the GST law, a taxpayer has to submit three returns on a monthly basis and one such return annually. All returns have to be filed online. Please note that there is no provision for revising the returns. All invoices of the previous tax period that went unreported must be included in the current month.",
                 "readMore": "Read more"
             },
             {
                 "title": "GST Registration",
-                "description": "The Goods & Services Tax (GST) launched on 01-Apr-2017 applies to all Indian service providers (including freelancers), traders and manufacturers, once their supply turnover crosses Rs. 20 lakh. The GST is an all-in-one tax that subsumes a variety of state (VAT, Entertainment Tax, Luxury Tax, Octroi) and central taxes (CST, Service Tax, Excise Duty). GST is to be charged at every step of the supply chain, with complete set-off benefits available.",
+                "description": "The Goods & Services Tax (GST) launched on 01-Apr-2017 applies to all Indian service providers (including freelancers), traders and manufacturers, once their supply turnover crosses Rs. 20 lakh. The GST is an all-in-one tax that subsumes a variety of state (VAT, Entertainment Tax, Luxury Tax, Octroi) and central taxes (CST, Service Tax, Excise Duty). GST is to be charged at every step of the supply chain.",
                 "readMore": "Read more"
             },
             {

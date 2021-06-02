@@ -1,0 +1,143 @@
+.pt-4 {
+    padding-top: 20px;
+}
+
+.mt-4 {
+    margin-top: 20px;
+}
+
+.choose {
+    padding: 70px 0px;
+    background: #fff;
+}
+
+.choose-h3 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #000;
+    margin: 40px 0;
+}
+
+.choose-card {
+    background: #fff;
+    // width: 303px;
+    // height: 299px;
+    padding: 30px 20px;
+    float: left;
+    box-shadow: 0 3px 10px #e9e9e9;
+    border-radius: 6px;
+    border: 1px #fff solid;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.choose-header {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    margin-top: 21px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.choose-para {
+    width: 100%;
+    margin: auto;
+    text-align: justify;
+    margin-top: 21px;
+    font-size: 14px;
+    color: #868686;
+}
+
+.choose_inner {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    margin-top: 1px;
+}
+
+.need-help {
+    background: #fff;
+    height: 355px;
+    padding: 20px;
+    margin-top: 30px;
+    box-shadow: 0 3px 10px #e9e9e9;
+    border-radius: 6px;
+    border: 1px #fff solid;
+    margin-right: 30px;
+    font-size: 14px;
+    padding-top: 3px;
+    .main_headingbox {
+        color: #1e2f4f;
+        font-size: 20px;
+        font-weight: 700;
+        text-align: justify;
+        padding-bottom: 7px;
+        padding-top: 20px;
+    }
+    .sub_headingbox {
+        color: #1e2f4f;
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+    .left_img {
+        width: 11%;
+        float: left;
+        text-align: right;
+        margin-left: -24px;
+        margin-bottom: 8px;
+        margin-top: -1px;
+    }
+    .right_textbox {
+        width: 90%;
+        float: left;
+        margin-left: 9px;
+        margin-bottom: 8px;
+    }
+    .clear-both {
+        clear: both;
+    }
+    .white_box_CA {
+        height: 30px;
+        width: 100%;
+        cursor: pointer;
+        padding-top: 1px;
+        margin-top: 3px;
+    }
+    .divleft_CA_other {
+        width: 63%;
+        float: left;
+        padding-top: 3px;
+        padding-left: 2px;
+    }
+    .divright_CA_other {
+        width: 16%;
+        float: right;
+        padding-top: 4px;
+        margin-left: 43px;
+        text-align: right;
+        padding-right: 4px;
+    }
+    button.btn.btn-success.useful {
+        background-color: #00b894!important;
+        border: none!important;
+        border-radius: 3px!important;
+        width: 100%!important;
+        height: 40px!important;
+        margin-bottom: 14px;
+        margin-top: 5px;
+    }
+    .usetools_img {
+        width: 10%;
+        float: left;
+        text-align: center;
+    }
+    .usetools_text {
+        width: 80%;
+        float: left;
+        text-align: justify;
+        margin-left: 6px;
+        margin-top: 2px;
+    }
+}

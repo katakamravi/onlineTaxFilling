@@ -1,120 +1,220 @@
-.top-bar {
-    background: black;
-    display: inline-block;
-    width: 100%;
-    padding: 5px;
-    margin: 0 0 -8px 0;
+/* # General
+================================ */
+
+
+/* # Header, Main Menu
+  ================================ */
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    padding: 0px;
+    color: #fff;
+    font-size: 13px;
+    background-color: #000d3a;
+    width: 250px;
+    position: absolute;
+    li {
+        padding: 10px;
+        list-style-type: none;
+        border-bottom: 1px solid #2d374a;
     }
-    
-    .container, .container-fluid {
-        padding-right: 15px;
-        padding-left: 15px;
-        margin-right: auto;
-        margin-left: auto;
+}
+
+.navbar {
+    opacity: 0.8;
+    margin-bottom: 0;
+    background-color: #fff;
+    transition: all 0.2s ease-out;
+}
+
+.navbar-container {
+    position: relative;
+}
+
+.navbar .navbar-nav li a {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #2E1C05;
+    transition: all 0.2s ease-out;
+}
+
+.navbar-brand {
+    font-size: 25px;
+    transition: all 0.2s ease-out;
+    color: rgba(200, 100, 0, 0.8);
+}
+
+.navbar-scroll {
+    opacity: 1;
+}
+
+#top-social-menu {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .navbar {
+        height: 120px;
     }
-    .icon-col {
-        float: left;
-    }
-    .dropdown-menu {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        z-index: 1000;
-        display: none;
-        float: left;
-        min-width: 160px;
-        padding: 5px 0;
-        margin: 2px 0 0;
-        font-size: 14px;
-        text-align: left;
-        list-style: none;
-        background-color: #fff;
-        -webkit-background-clip: padding-box;
-        background-clip: padding-box;
-        border: 1px solid #ccc;
-        border: 1px solid rgba(0, 0, 0, .15);
-        border-radius: 4px;
-        -webkit-box-shadow: 0 6px 12px rgb(0 0 0 / 18%);
-        box-shadow: 0 6px 12px rgb(0 0 0 / 18%);
-    }
-    
-    #header .navbar-default {
-        background: white;
-        border: 0;
-        padding: 5px 0;
-        margin-top: 0 !important;
-    }
-    #header nav {
-        margin: 0!important;
-        margin-top: 13px !important;
-    }
-    
-    .navbarmenus {
+    .navbar-nav>li>a {
         padding: 0;
+        margin-top: 35px;
+        margin-left: 50px;
+        line-height: 70px;
     }
-    
-    .logo {
+    .navbar-brand {
+        font-size: 28px;
+        padding: 0;
+        height: 120px;
+        line-height: 120px;
+    }
+    #top-social-menu {
+        display: initial;
+    }
+    /* Navbar when scrolled */
+    .navbar-scroll {
+        height: 70px;
+    }
+    .navbar-scroll #top-social-menu {
+        display: none;
+        transition: all 0.2s ease-out;
+    }
+    .navbar-scroll .navbar-brand {
+        height: 70px;
+        line-height: 40px;
+    }
+    .navbar-scroll .navbar-nav>li>a {
+        opacity: 1;
+        padding: 0;
         margin-top: 0;
-        margin-right: 0;
-        margin-bottom: 0;
-        margin-left: 0;
+        line-height: 40px;
+        padding-bottom: 15px;
     }
-    .logo {
-        float: left;
-        text-decoration: none!important;
+}
+
+
+/* # Hover Link Effect
+  ================================ */
+
+// s
+
+/* # Social menu
+  ================================ */
+
+#top-social-menu {
+    position: absolute;
+    top: 7px;
+    right: 0;
+    font-size: 12px;
+    z-index: 101;
+    padding-right: 0px;
+    list-style: none;
+    color: #2E1C05;
+    transition: all 0.2s ease-out;
+}
+
+#top-social-menu li {
+    float: left;
+    padding: 10px 15px;
+}
+
+#top-social-menu li:last-child {
+    padding-right: 0;
+}
+
+#top-social-menu li a {
+    text-decoration: none;
+    color: #2E1C05;
+}
+
+#top-social-menu li a:hover {
+    text-decoration: none;
+    color: #543A1A;
+}
+
+#top-social-menu i {
+    font-size: 16px;
+    transition: all 0.2s ease-in;
+}
+
+#top-social-menu i:hover {
+    text-decoration: none;
+    color: #543A1A;
+}
+
+
+/* # Section Full Width Image
+  ================================ */
+
+.full-width-img {
+    background: url('https://www.myaccountsconsultant.com/assets/images/slider/Professional-Accounting-Services.jpg') no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    padding-top: 100px;
+    height: 450px;
+    color: #fff;
+}
+
+.box {
+    background: rgba(0, 0, 0, 0.4);
+    border: 3px solid #000;
+    color: #fff;
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px 20px;
+}
+
+.subheading-text {
+    list-style: none;
+    font-size: 35px;
+    line-height: 50px;
+}
+
+@media (min-width: 768px) {
+    .full-width-img {
+        padding-top: 110px;
+        height: 1000px;
     }
-    .logo.sticky_logo {
-        display: none;
+    .subheading-text {
+        font-size: 50px;
+        line-height: 70px;
     }
-    #header .menu {
-        padding: 0;
+    .box {
+        margin-top: 100px;
+        padding: 80px 20px;
     }
-    .navbar-nav {
-        float: left;
-        margin: 0;
-    }
-    .nav {
-        padding-left: 0;
-        margin-bottom: 0;
-        list-style: none;
-    }
-    #menu-header-menu>li {
-        height: 40px;
-        padding-top: 10px;
-        /* border: solid 1px #4a5877; */
-    }
-    .navbar-nav > li {
-        float: left;
-    }
-    .nav > li {
-        position: relative;
-        display: block;
-    }
-    #header .menu ul .sub-menu {
-        -webkit-box-shadow: rgba(229,229,229,.7)0 1px 3px;
-        -moz-box-shadow: rgba(229,229,229,.7)0 1px 3px;
-        box-shadow: rgb(229 229 229 / 70%) 1px 1px 3px 1px;
-        background: #fbfbfb;
-        padding: 0;
-        width: 230px;
-        position: absolute;
-        top: 150%;
-        left: 0;
-        z-index: 22;
-        display: block !important;
-        visibility: hidden;
-        opacity: 0;
-        transition: all 500ms ease;
-        -moz-transition: all 500ms ease;
-        -webkit-transition: all 500ms ease;
-        -ms-transition: all 500ms ease;
-        -o-transition: all 500ms ease;
-        list-style: none;
-        margin-top: 10px;
-    }
-    #header .menu ul .sub-menu li {
-        position: relative;
-    }
-    .visible-xs, .visible-sm, .visible-md, .visible-lg {
-        display: none !important;
-    }    
+}
+
+
+/* # Section Black, White
+  ================================ */
+
+.section-black,
+.section-white {
+    padding: 50px 0;
+    color: #fff;
+    line-height: 1.7;
+}
+
+.section-black h3,
+.section-white h3 {
+    margin-bottom: 60px;
+}
+
+.section-black p,
+.section-white p {
+    margin-bottom: 60px;
+}
+
+.section-black {
+    background: linear-gradient(#363437, #121112);
+}
+
+.section-white {
+    background: linear-gradient(#ffffff, #f3f3f3);
+    color: #0e0d0e;
+}

@@ -15,33 +15,130 @@
             <div class="col-lg-6">
                 <h2>{{content.About.title}}</h2>
                 <div class="text" [innerHtml]="content.About.description">
-                
+
+                </div>
+                <div>
+                    <button class="primary-button button-sm mt-15-xs btn">Start e-Filing</button>
                 </div>
             </div>
             <div class="col-lg-6">
                 <div>
-                    <img src="http://www.easytaxconsultancy.in/images/resource/video-img.jpg" class="img-responsive">
+                    <img src="../../../assets/images/itr-home.webp" class="img-responsive">
                 </div>
             </div>
 
         </div>
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="need-help">
+                    <div class="header-div">
+                        <div class="main_headingbox">File Returns in 5 Minutes</div>
+                        <div class="sub_headingbox">Upload your form 16 &amp; file income tax return yourself in just 5 minutes</div>
+                    </div>
+                    <div class="clear-both">
+                        <div class="left_img"><img alt="bullet" src="../../../assets/images/file_return_points.webp"></div>
+                        <div class="right_textbox">Quick &amp; Easy Tax Return filing</div>
+                    </div>
+                    <div class="clear-both">
+                        <div class="left_img"><img alt="bullet" src="../../../assets/images/file_return_points.webp"></div>
+                        <div class="right_textbox">Quick &amp; Easy Tax Return filing</div>
+                    </div>
+                    <div class="clear-both">
+                        <div class="left_img"><img alt="bullet" src="../../../assets/images/file_return_points.webp"></div>
+                        <div class="right_textbox">Quick &amp; Easy Tax Return filing</div>
+                    </div>
+                    <div class="clear-both">
+                        <div class="left_img"><img alt="bullet" src="../../../assets/images/file_return_points.webp"></div>
+                        <div class="right_textbox">Quick &amp; Easy Tax Return filing</div>
+                    </div>
+                    <div class="clear-both">
+                        <div class="left_img"><img alt="bullet" src="../../../assets/images/file_return_points.webp"></div>
+                        <div class="right_textbox">Quick &amp; Easy Tax Return filing</div>
+                    </div>
+                    <div class="clear-both">
+                        <div class="left_img"><img alt="bullet" src="../../../assets/images/file_return_points.webp"></div>
+                        <div class="right_textbox">Quick &amp; Easy Tax Return filing</div>
+                    </div>
+                    <button type="button" class="btn btn-primary mt-4">
+                        <div class="usetools_text">Income Tax Calculator</div>
+                        </button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="need-help">
+                    <div class="header-div">
+                        <div class="main_headingbox">File Returns in 5 Minutes</div>
+                        <div class="sub_headingbox">Upload your form 16 &amp; file income tax return yourself in just 5 minutes</div>
+                    </div>
+                    <div class="white_box_CA">
+                        <div class="divleft_CA_other">Salary + Interest Income</div>
+                        <div class="divright_CA_other">₹ 999</div>
+                    </div>
+                    <div class="white_box_CA">
+                        <div class="divleft_CA_other">Salary + Interest Income</div>
+                        <div class="divright_CA_other">₹ 999</div>
+                    </div>
+                    <div class="white_box_CA">
+                        <div class="divleft_CA_other">Salary + Interest Income</div>
+                        <div class="divright_CA_other">₹ 999</div>
+                    </div>
+                    <div class="white_box_CA">
+                        <div class="divleft_CA_other">Salary + Interest Income</div>
+                        <div class="divright_CA_other">₹ 999</div>
+                    </div>
+                    <div class="white_box_CA">
+                        <div class="divleft_CA_other">Salary + Interest Income</div>
+                        <div class="divright_CA_other">₹ 999</div>
+                    </div>
+                    <div class="white_box_CA">
+                        <div class="divleft_CA_other">Salary + Interest Income</div>
+                        <div class="divright_CA_other">₹ 999</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="need-help">
+                    <div class="header-div">
+                        <div class="main_headingbox">File Returns in 5 Minutes</div>
+                        <div class="sub_headingbox">Upload your form 16 &amp; file income tax return yourself in just 5 minutes</div>
+                    </div>
+                    <button type="button" class="btn btn-success useful" ui-sref="incomeTaxCalulator">
+                        <div class="usetools_img"><img alt="bullet" src="../../../assets/images/generate-rent-receipt.webp"></div>
+                        <div class="usetools_text">Income Tax Calculator</div>
+                        </button>
+                    <button type="button" class="btn btn-success useful" ui-sref="incomeTaxCalulator">
+                            <div class="usetools_img"><img alt="bullet" src="../../../assets/images/generate-rent-receipt.webp"></div>
+                            <div class="usetools_text">Income Tax Calculator</div>
+                            </button>
+                    <button type="button" class="btn btn-success useful" ui-sref="incomeTaxCalulator">
+                                <div class="usetools_img"><img alt="bullet" src="../../../assets/images/generate-rent-receipt.webp"></div>
+                                <div class="usetools_text">Income Tax Calculator</div>
+                                </button>
+                    <button type="button" class="btn btn-success useful" ui-sref="incomeTaxCalulator">
+                                    <div class="usetools_img"><img alt="bullet" src="../../../assets/images/generate-rent-receipt.webp"></div>
+                                    <div class="usetools_text">Income Tax Calculator</div>
+                                    </button>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
-<section class="service-section">
+<section class="choose">
     <div class="text-center service-header">
         <h3>{{content.services.title}}</h3>
         <p>{{content.services.description}}</p>
     </div>
-    <div class="container mt-4">    
+    <div class="container mt-4">
         <div class="row ml-0 mr-0">
-            <div class="col-md-6 col-sm-12" *ngFor="let service of content.services.servicesList">
+            <div class="col-md-6 col-sm-12 pt-4" *ngFor="let service of content.services.servicesList">
                 <div class="">
                     <div class="icon-box">
                         <img src="https://www.myaccountsconsultant.com/assets/images/logos/bookkeeping.png" width="60" height="60">
                     </div>
                     <div class="text-vision">
-
-                        <a href="javascript:void(0)" (click)="readMore(service)">{{service.title}}</a>
+                        <h4>
+                            <a href="javascript:void(0)" (click)="readMore(service)">{{service.title}}</a>
+                        </h4>
                         <p>{{service.description}}
                         </p>
                         <a href="javascript:void(0)" (click)="readMore(service)">{{service.readMore}}</a>
@@ -125,4 +222,50 @@
             </div>
         </div>
     </div> -->
+</section>
+
+<section class="service-section">
+    <div class="container">
+        <div class="text-center">
+            <h3 class="choose-h3">Why choose us?</h3>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="choose-card">
+                    <div class="choose_inner">
+                        <img src="https://www.myaccountsconsultant.com/assets/images/logos/Software-Migration.png" width="80px">
+                        <h4 class="choose-header ">Vision</h4>
+                        <div class="choose-para">
+                            <p>
+                                Our top most prority is to keep your data safe and secure with us. We regiously work towards providing the best services in a short span of time.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="choose-card">
+                    <div class="choose_inner">
+                        <img src="https://www.myaccountsconsultant.com/assets/images/logos/Software-Migration.png" width="80px">
+                        <h4 class="choose-header ">Vision</h4>
+                        <div class="choose-para">
+                            <p>
+                                Our top most prority is to keep your data safe and secure with us. We regiously work towards providing the best services in a short span of time.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="choose-card">
+                    <div class="choose_inner">
+                        <img src="https://www.myaccountsconsultant.com/assets/images/logos/Software-Migration.png" width="80px">
+                        <h4 class="choose-header ">Vision</h4>
+                        <div class="choose-para">
+                            <p>
+                                Our top most prority is to keep your data safe and secure with us. We regiously work towards providing the best services in a short span of time.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
