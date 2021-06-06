@@ -17,14 +17,34 @@
                 "readMore": "Read more"
             },
             {
-                "title": "New Business",
+                "title": "GST Returns",
                 "description": "A sole proprietor is the simplest form of an organization. It is very easy and convenient way of doing business. It is the most common form of business in India. It has very minimum registrations and have very minimal regulatory compliance requirement. However, after the business develops, proprietorship does not offer facilities...",
                 "readMore": "Read more",
                 "nextRow": true
+            }
+        ]
+    },
+    "newBusiness": {
+        "title": "Starting A New Business",
+        "description": "We have a team of skilled and experienced Chartered Accountants in India providing quality services ! ",
+        "servicesList": [{
+                "title": "PROPRIETORSHIP",
+                "description": "A sole proprietor is the simplest form of an organization. A sole proprietorship can operate under the name of its owner or it can do business under a fictitious name. It is very easy and convenient way of doing business. It is the most common form of business in India. It has very minimum registrations and have very minimal regulatory compliance requirement. However, after the business develops, proprietorship does not offer facilities such as limited liability, separate legal entity, independent existence...",
+                "readMore": "Read more"
             },
             {
-                "title": "TDS Preparation",
-                "description": "TDS Filing Service requires thorough understanding of the tax provisions, where EZTax.in Experts can help you file your TDS Returns with ease. EZTax.in help you in filing the Sale on Property (From-26QB), TDS on Salary (From-24Q), Other payments (Form-26Q) with best & lowest Pricing.",
+                "title": "PARTNERSHIP FIRM",
+                "description": "A Partnership is a business entity common amongst small or medium business setups. Two or more people come together to form a business and divide the profits thereof in an agreed ratio. A Partnership is easy to form by drafting a Partnership deed amongst the Partners. Also the compliance is minimal...",
+                "readMore": "Read more"
+            },
+            {
+                "title": "PRIVATE LIMITED COMPANY",
+                "description": "Requiring a minimum of two people to act as Directors and two shareholders, it is the most common form of corporate entity in India. A private Limited company can begin with, operations after getting the Certificate of Incorporation...",
+                "readMore": "Read more"
+            },
+            {
+                "title": "LIMITED LIABILITY PARTNERSHIP (LLP)",
+                "description": "In recent times, LLP Registration has hugely evolved given its simplicity in formation and easy maintenance. LLP is ideal for Professionals, Micro and Small businesses that are family-owned or closely-held...",
                 "readMore": "Read more"
             }
         ]

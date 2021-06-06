@@ -9,7 +9,12 @@ import { ContentHelper } from 'src/app/services/contentHelper';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent extends BaseComponent implements OnInit {
-
+ images = [
+  {path: 'http://www.uptra.in/images/banner/image-3.jpg'},
+  {path: 'http://www.uptra.in/images/banner/image-3.jpg'},
+  {path: 'http://www.uptra.in/images/banner/image-3.jpg'},
+  {path: 'http://www.uptra.in/images/banner/image-3.jpg'}
+ ];
   constructor(private _route: ActivatedRoute,private _router: Router, @Inject(ContentHelper) private _contentHelper: ContentHelper) {
     super(_route, _contentHelper, 'home');
    }

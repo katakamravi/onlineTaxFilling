@@ -8,12 +8,12 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TermsandcondComponent } from './others/termsandcond/termsandcond.component';
 import { PrivacypolicyComponent } from './others/privacypolicy/privacypolicy.component';
 import { AboutusComponent } from './others/aboutus/aboutus.component';
-
-
+import {IvyCarouselModule} from 'angular-responsive-carousel';
 
 @NgModule({
   declarations: [HomeComponent, ServicesComponent, TermsandcondComponent, PrivacypolicyComponent, AboutusComponent],
   imports: [
+    IvyCarouselModule,
     RouterModule.forChild([
     {
       path: '',
