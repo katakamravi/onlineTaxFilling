@@ -35,9 +35,25 @@
             ],
             "styles": [
               "src/styles.scss",
+              "src/assets/css/main.css",
+              "src/assets/css/animate.css",
+              "src/assets/css/animation.css",
+              "src/assets/css/bootstrap.min.css",
+              "src/assets/css/elegenticon.css",
+              "src/assets/css/fontawesome.min.css",
+              "src/assets/css/icofont.min.css",
+              "src/assets/css/jquery-ui.css",
+              "src/assets/css/jquery.fancybox.min.css",
+              "src/assets/css/jquery.mCustomScrollbar.min.css",
+              "src/assets/css/linearicons.css",
+              "src/assets/css/owl.css",
+              "src/assets/css/responsive.css",
+              "src/assets/css/simple-line-icons.css",
+              "src/assets/css/themify-icons.css",
               "./node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
             "scripts": [
+              "./src/assets/js/script.js",
               "./node_modules/jquery/dist/jquery.min.js",
               "./node_modules/bootstrap/dist/js/bootstrap.min.js"
             ]

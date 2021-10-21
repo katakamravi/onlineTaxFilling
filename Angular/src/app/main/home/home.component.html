@@ -9,16 +9,8 @@
         </div>
     </div>
 </div> -->
-<carousel 
-    [objectFit]="'cover'"
-    [cellWidth]="'100%'"
-    [autoplay]="true"
-    [images]="images"
-    [dots]="true"
-    [height]="500"
-    [loop]="true"
-    [overflowCellsLimit]="1"
-    style=" background-color: #999;position:relative;">
+<carousel [objectFit]="'cover'" [cellWidth]="'100%'" [autoplay]="true" [images]="images" [dots]="true" [height]="500"
+    [loop]="true" [overflowCellsLimit]="1" style=" background-color: #999;position:relative;">
 </carousel>
 
 <section class="service-section">
@@ -41,12 +33,13 @@
             <div class="col-md-4" *ngFor="let service of content.services.servicesList">
                 <div class="need-help">
                     <div class="header-div text-vision">
-                        <a href="javascript:void(0)" class="main_headingbox" (click)="readMore(service)">{{service.title}}</a>
+                        <a href="javascript:void(0)" class="main_headingbox"
+                            (click)="readMore(service)">{{service.title}}</a>
                         <div class="sub_headingbox">{{service.description}}</div>
                     </div>
                     <button type="button" class="btn btn-primary mt-4">
                         <div class="usetools_text">Click here to File</div>
-                        </button>
+                    </button>
                 </div>
             </div>
         </div>
@@ -58,11 +51,12 @@
         <p>{{content.newBusiness.description}}</p>
     </div>
     <div class="container mt-4">
-        <div class="row ml-0 mr-0">
-            <div class="col-md-6 col-sm-12 pt-4" *ngFor="let service of content.newBusiness.servicesList">
+        <div class="ml-0 mr-0">
+            <div class="row col-md-6 col-sm-12 pt-4" *ngFor="let service of content.newBusiness.servicesList">
                 <div class="">
                     <div class="icon-box">
-                        <img src="https://www.myaccountsconsultant.com/assets/images/logos/bookkeeping.png" width="60" height="60">
+                        <img src="https://www.myaccountsconsultant.com/assets/images/logos/bookkeeping.png" width="60"
+                            height="60">
                     </div>
                     <div class="text-vision">
                         <h4>
@@ -74,34 +68,6 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class=" col-lg-4 col-md-6 col-sm-12">
-                <div class="">
-                    <div class="icon-box">
-                        <img src="https://www.myaccountsconsultant.com/assets/images/logos/bookkeeping.png" width="60" height="60">
-                    </div>
-                    <div class="text-vision">
-
-                        <h4>GST Registration</h4>
-                        <p>The Goods & Services Tax (GST) launched on 01-Apr-2017 applies to all Indian service providers (including freelancers), traders and manufacturers, once their supply turnover crosses Rs. 20 lakh. The GST is an all-in-one tax that subsumes a variety of state (VAT, Entertainment Tax, Luxury Tax, Octroi) and central taxes (CST, Service Tax, Excise Duty). GST is to be charged at every step of the supply chain, with complete set-off benefits available.
-                        </p>
-                        <a href="">Read more</a>
-                    </div>
-                </div>
-            </div>
-            <div class=" col-lg-4 col-md-6 col-sm-12">
-                <div class="">
-                    <div class="icon-box">
-                        <img src="https://www.myaccountsconsultant.com/assets/images/logos/bookkeeping.png" width="60" height="60">
-                    </div>
-                    <div class="text-vision">
-
-                        <h4>Amendent Filing</h4>
-                        <p>If you find an error after filing your return, you may need to amend your return. The IRS may correct errors in math on a return and may accept returns without certain forms or schedules. In these instances, there is no need to amend your return! However, do file an amended return if there is a change in your filing status, income, deductions, or credits.
-                        </p>
-                        <a href="">Read more</a>
-                    </div>
-                </div>
-            </div> -->
         </div>
     </div>
     <!-- <div class="container mt-4">
@@ -162,11 +128,13 @@
             <div class="col-md-4">
                 <div class="choose-card">
                     <div class="choose_inner">
-                        <img src="https://www.myaccountsconsultant.com/assets/images/logos/Software-Migration.png" width="80px">
+                        <img src="https://www.myaccountsconsultant.com/assets/images/logos/Software-Migration.png"
+                            width="80px">
                         <h4 class="choose-header ">Vision</h4>
                         <div class="choose-para">
                             <p>
-                                Our top most prority is to keep your data safe and secure with us. We regiously work towards providing the best services in a short span of time.</p>
+                                Our top most prority is to keep your data safe and secure with us. We regiously work
+                                towards providing the best services in a short span of time.</p>
                         </div>
                     </div>
                 </div>
@@ -174,11 +142,13 @@
             <div class="col-md-4">
                 <div class="choose-card">
                     <div class="choose_inner">
-                        <img src="https://www.myaccountsconsultant.com/assets/images/logos/Software-Migration.png" width="80px">
+                        <img src="https://www.myaccountsconsultant.com/assets/images/logos/Software-Migration.png"
+                            width="80px">
                         <h4 class="choose-header ">Vision</h4>
                         <div class="choose-para">
                             <p>
-                                Our top most prority is to keep your data safe and secure with us. We regiously work towards providing the best services in a short span of time.</p>
+                                Our top most prority is to keep your data safe and secure with us. We regiously work
+                                towards providing the best services in a short span of time.</p>
                         </div>
                     </div>
                 </div>
@@ -186,11 +156,13 @@
             <div class="col-md-4">
                 <div class="choose-card">
                     <div class="choose_inner">
-                        <img src="https://www.myaccountsconsultant.com/assets/images/logos/Software-Migration.png" width="80px">
+                        <img src="https://www.myaccountsconsultant.com/assets/images/logos/Software-Migration.png"
+                            width="80px">
                         <h4 class="choose-header ">Vision</h4>
                         <div class="choose-para">
                             <p>
-                                Our top most prority is to keep your data safe and secure with us. We regiously work towards providing the best services in a short span of time.</p>
+                                Our top most prority is to keep your data safe and secure with us. We regiously work
+                                towards providing the best services in a short span of time.</p>
                         </div>
                     </div>
                 </div>

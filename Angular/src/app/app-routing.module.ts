@@ -1,11 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './main/home/home.component';
+import { NewHomeComponent } from './main/new-home/new-home.component';
 import { ServicesComponent } from './main/services/services.component';
 import { ContentResolver } from './services/contentResolver';
 
 const routes: Routes = [
-  {path: 'home', component: HomeComponent,
+  {path: 'home', component: NewHomeComponent,
    resolve: {content: ContentResolver}},
   {path: '', redirectTo: 'home', pathMatch: 'full'},
   // // {path: 'services', component: ServicesComponent,

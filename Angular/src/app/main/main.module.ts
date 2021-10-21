@@ -9,9 +9,10 @@ import { TermsandcondComponent } from './others/termsandcond/termsandcond.compon
 import { PrivacypolicyComponent } from './others/privacypolicy/privacypolicy.component';
 import { AboutusComponent } from './others/aboutus/aboutus.component';
 import {IvyCarouselModule} from 'angular-responsive-carousel';
+import { NewHomeComponent } from './new-home/new-home.component';
 
 @NgModule({
-  declarations: [HomeComponent, ServicesComponent, TermsandcondComponent, PrivacypolicyComponent, AboutusComponent],
+  declarations: [HomeComponent, ServicesComponent, TermsandcondComponent, PrivacypolicyComponent, AboutusComponent, NewHomeComponent],
   imports: [
     IvyCarouselModule,
     RouterModule.forChild([
