@@ -10,9 +10,10 @@ import { PrivacypolicyComponent } from './others/privacypolicy/privacypolicy.com
 import { AboutusComponent } from './others/aboutus/aboutus.component';
 import {IvyCarouselModule} from 'angular-responsive-carousel';
 import { NewHomeComponent } from './new-home/new-home.component';
+import { NewServicesComponent } from './new-services/new-services.component';
 
 @NgModule({
-  declarations: [HomeComponent, ServicesComponent, TermsandcondComponent, PrivacypolicyComponent, AboutusComponent, NewHomeComponent],
+  declarations: [HomeComponent, ServicesComponent, TermsandcondComponent, PrivacypolicyComponent, AboutusComponent, NewHomeComponent, NewServicesComponent],
   imports: [
     IvyCarouselModule,
     RouterModule.forChild([
@@ -23,7 +24,7 @@ import { NewHomeComponent } from './new-home/new-home.component';
     },
     {
       path: 'services',
-      component: ServicesComponent,
+      component: NewServicesComponent,
       resolve: {content: ContentResolver}
     },
     {

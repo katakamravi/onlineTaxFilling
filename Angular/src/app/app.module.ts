@@ -11,6 +11,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ContentHelper } from './services/contentHelper';
 import { MainModule } from './main/main.module';
 import { WindowRef } from './services/windowRef.service';
+import { NewServicesComponent } from './main/new-services/new-services.component';
 
 @NgModule({
   declarations: [
