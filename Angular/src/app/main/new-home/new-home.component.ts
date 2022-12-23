@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { DataHandlerService } from 'src/app/services/dataHandler.service';
 
 @Component({
   selector: 'app-new-home',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NewHomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _router: Router,private _dataHandlerService: DataHandlerService) { }
 
   ngOnInit(): void {
   }
+
+  onUpdateServices(data: any) {
+    this._router.navigate(['services'], { queryParams: { page: data } });
+    this._dataHandlerService.UpdateServicesData(data);
+    }
 
 }

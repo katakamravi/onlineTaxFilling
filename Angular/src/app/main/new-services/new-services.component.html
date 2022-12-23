@@ -1,12 +1,38 @@
 <div class="page-wrapper">
- 		
+	<!-- Service Banner Section -->
+
+    <div class="service-banner-section" data-bg-image="assets/images/background/service-bg.jpg" *ngIf="services?.hasSections">
+		<div class="bg-card">
+		<div class="container row">
+			<div class="card_text">
+			<h2>One Person Company</h2>
+			<p>It is governed by the Companies Act, 2013 under the Ministry of Corporate Affairs. OPC Consisting of only one member who is also the director of the company. It is a form of a company where the compliance requirements are lesser than that of a private company.
+			</p>
+		</div>
+			  <div class="col-md-4 mt-5 mb-5 pt-5" *ngFor="let sections of services?.sections || []">
+				  <div class="text-center bg-white product-card-design">
+					<img src="https://assets1.cleartax-cdn.com/cleartax/images/1643883315_icon11c.png" alt="Person" class="">
+					<div class="pb-3 card-service-body">
+						<h3>{{sections?.title}}</h3>
+						<p>{{sections.description}}</p>
+					</div>
+					<div class="card-button">
+						<a href="#">See More</a>
+						</div>
+				  </div>
+			  </div>
+		</div>
+		</div>
+	</div>
+	<!-- End Service Banner Section -->
+	<div *ngIf="!services?.hasSections">
 	<!-- Service Banner Section -->
     <div class="service-banner-section" data-bg-image="assets/images/background/service-bg.jpg">
 		<div class="auto-container">
 			<div class="content-box">
-				<h2>Our <span>Services</span></h2>
-				<div class="text">Capitalise on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional base clickthroughs.</div>
-				<a href="contact.html" class="theme-btn btn-style-one"><span class="txt">get in touch</span></a>
+				<h2><span>{{services?.title}}</span></h2>
+				<div class="text">{{services?.description}}</div>
+				<a href="javascript:void(0)" class="theme-btn btn-style-one" (click)="onGoToDetail()"><span class="txt">read more</span></a>
 				
 				<!-- Lower Box -->
 				<div class="lower-box clearfix">
@@ -17,7 +43,7 @@
 						</div>
 					</div>
 					<div class="pull-right">
-						<a class="phone" href="tel:+53-8698-50-50">+53 8698 50 50</a>
+						<a class="phone" href="tel:+53-8698-50-50">+91 8099029010</a>
 					</div>
 				</div>
 				
@@ -32,27 +58,27 @@
 						<div class="row clearfix">
 							<div class="col-lg-7">
 								<div class="sec-title">
-									<div class="title">Social Media Markenting</div>
+									<div class="title">Documents Required</div>
 									<h2><span>Sloving Business</span> For Your Business</h2>
 									<p>Capitalise on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional base clickthroughs.</p>
 								</div>
-								<div class="row">
+								<div class="row" *ngFor="let documents of services?.DocumentsRequired">
 										<div class="col-md-6">
 										<ul class="check-list">
-											<li><i class="icofont-check"></i>Head</li>
-											<li> <i class="icofont-check"></i>Shoulders</li>
+											<li><i class="icofont-check"></i>{{documents.name}}</li>
+											<!-- <li> <i class="icofont-check"></i>Shoulders</li>
 											<li> <i class="icofont-check"></i>Knees</li>
-											<li><i class="icofont-check"></i>Toes</li>
+											<li><i class="icofont-check"></i>Toes</li> -->
 										  </ul>
 										</div>
-										<div class="col-md-6">
+										<!-- <div class="col-md-6">
 											<ul class="check-list">
 												<li><i class="icofont-check"></i>Head</li>
 												<li> <i class="icofont-check"></i>Shoulders</li>
 												<li> <i class="icofont-check"></i>Knees</li>
 												<li><i class="icofont-check"></i>Toes</li>
 											  </ul>
-											</div>
+											</div> -->
 									
 								</div>
 							</div>
@@ -63,23 +89,28 @@
 							<h5>free consulation</h5>
 							
 							<div class="consult-form">
-								<form method="post" action="https://htmldemo.hasthemes.com/consultix/consultix/donate.html">
+								<form [formGroup]="userForm">
 
 									<!--Form Group-->
 									<div class="form-group">
 										<label>full name</label>
-										<input type="text" name="name" value="" placeholder="Jason Staham" required>
+										<input type="text" name="name" value="" placeholder="Your Name" formControlName="userName">
 									</div>
 									<!--Form Group-->
 									<div class="form-group">
 										<label>phone number</label>
-										<input type="text" name="phone" value="" placeholder="Enter your phone number" required>
+										<input type="text" name="phone" value="" placeholder="Enter your phone number"  formControlName="userMobile">
 									</div>
+										<!--Form Group-->
+										<div class="form-group">
+											<label>Email</label>
+											<input type="text" name="email" value="" placeholder="Enter your Email"  formControlName="userEmail">
+										</div>
 									<!--Form Group-->
 									<div class="form-group">
-										<label>topics</label>
-										<select class="custom-select-box">
-											<option>Choose topic</option>
+										<label>State</label>
+										<select class="custom-select-box" formControlName="state">
+											<option>Choose State</option>
 											<option>Topic 01</option>
 											<option>Topic 02</option>
 											<option>Topic 03</option>
@@ -87,7 +118,7 @@
 										</select>
 									</div>
 									<div class="text-center mt-4 mb-4">
-										<button class=" btn-style-one" type="submit" name="submit-form"><span class="txt">send your messenger</span></button>
+										<button class=" btn-style-one" type="submit" name="submit-form" (click)="submitUser()"><span class="txt">submit</span></button>
 									</div>
 								</form>
 							
@@ -102,125 +133,12 @@
 			</div>
 	</section>
 	
-	<!-- Services Section -->
-	<div class="services-section section-padding">
-		<div class="auto-container">
-			<div class="sec-title">
-				<div class="title">our services</div>
-				<h2><span>Best Solutions</span> For Your Business</h2>
-			</div>
-			<div class="inner-container">
-				<div class="row g-0">
-				
-					<!-- Service Block -->
-					<div class="service-block col-lg-3 col-md-6 col-sm-12">
-						<div class="inner-box">
-							<div class="icon-box">
-								<span class="icon ti-blackboard"></span>
-							</div>
-							<h5><a href="service-detail.html">Strategy</a></h5>
-							<div class="text">Thought leadership pass the clap hackathon wearables.</div>
-							<a class="read-more" href="service-detail.html">More <span class="ti-angle-right"></span></a>
-						</div>
-					</div>
-					
-					<!-- Service Block -->
-					<div class="service-block col-lg-3 col-md-6 col-sm-12">
-						<div class="inner-box">
-							<div class="icon-box">
-								<span class="icon ti-stats-up"></span>
-							</div>
-							<h5><a href="service-detail.html">Financial</a></h5>
-							<div class="text">Platform omnichannel click thought leadership pivot</div>
-							<a class="read-more" href="service-detail.html">More <span class="ti-angle-right"></span></a>
-						</div>
-					</div>
-					
-					<!-- Service Block -->
-					<div class="service-block col-lg-3 col-md-6 col-sm-12">
-						<div class="inner-box">
-							<div class="icon-box">
-								<span class="icon ti-shield"></span>
-							</div>
-							<h5><a href="service-detail.html">Insurance</a></h5>
-							<div class="text">Disrupt taste makers help council emerging.</div>
-							<a class="read-more" href="service-detail.html">More <span class="ti-angle-right"></span></a>
-						</div>
-					</div>
-					
-					<!-- Service Block -->
-					<div class="service-block col-lg-3 col-md-6 col-sm-12">
-						<div class="inner-box">
-							<div class="icon-box">
-								<span class="icon ti-home"></span>
-							</div>
-							<h5><a href="service-detail.html">Estate</a></h5>
-							<div class="text">Mobile ready proprietary dedication intuitive</div>
-							<a class="read-more" href="service-detail.html">More <span class="ti-angle-right"></span></a>
-						</div>
-					</div>
-					
-					<!-- Service Block -->
-					<div class="service-block col-lg-3 col-md-6 col-sm-12">
-						<div class="inner-box">
-							<div class="icon-box">
-								<span class="icon ti-stamp"></span>
-							</div>
-							<h5><a href="service-detail.html">Audit & Evaluation</a></h5>
-							<div class="text">Thought leadership pass the clap hackathon wearables.</div>
-							<a class="read-more" href="service-detail.html">More <span class="ti-angle-right"></span></a>
-						</div>
-					</div>
-					
-					<!-- Service Block -->
-					<div class="service-block col-lg-3 col-md-6 col-sm-12">
-						<div class="inner-box">
-							<div class="icon-box">
-								<span class="icon ti-money"></span>
-							</div>
-							<h5><a href="service-detail.html">Taxes & Efficiency</a></h5>
-							<div class="text">Disrupt taste makers help council emerging.</div>
-							<a class="read-more" href="service-detail.html">More <span class="ti-angle-right"></span></a>
-						</div>
-					</div>
-					
-					<!-- Service Block -->
-					<div class="service-block col-lg-3 col-md-6 col-sm-12">
-						<div class="inner-box">
-							<div class="icon-box">
-								<span class="icon ti-shopping-cart-full"></span>
-							</div>
-							<h5><a href="service-detail.html">Consumer Market</a></h5>
-							<div class="text">Mobile ready proprietary dedication intuitive</div>
-							<a class="read-more" href="service-detail.html">More <span class="ti-angle-right"></span></a>
-						</div>
-					</div>
-					
-					<!-- Service Block -->
-					<div class="service-block col-lg-3 col-md-6 col-sm-12">
-						<div class="inner-box">
-							<div class="icon-box">
-								<span class="icon ti-truck"></span>
-							</div>
-							<h5><a href="service-detail.html">Logistic</a></h5>
-							<div class="text">Platform omnichannel click thought leadership pivot</div>
-							<a class="read-more" href="service-detail.html">More <span class="ti-angle-right"></span></a>
-						</div>
-					</div>
-					
-				</div>
-				
-			</div>
-		</div>
-	</div>
-	<!-- End Services Section -->
+	
 	<section class="pricing-section">
+		<div class="sec-title text-center">
+			<h2>Choose your package</h2>
+		</div>
         <div class="container">
-            <div class="sec-title text-center">
-                <span class="title">Get plan</span>
-                <h2>Choose a Plan</h2>
-            </div>
-
             <div class="outer-box">
                 <div class="row">
                     <!-- Pricing Block -->
@@ -230,7 +148,7 @@
                                 <div class="icon-outer"><i class="fas fa-paper-plane"></i></div>
                             </div>
                             <div class="price-box">
-                                <div class="title"> Day Pass</div>
+                                <div class="title"> Per Month</div>
                                 <h4 class="price">$35.99</h4>
                             </div>
                             <ul class="features">
@@ -241,7 +159,7 @@
                                 <li class="false">Free Contacts</li>
                             </ul>
                             <div class="btn-box">
-                                <a href="https://codepen.io/anupkumar92" class="theme-btn">BUY plan</a>
+                                <a href="https://codepen.io/anupkumar92" class="theme-btn">Buy Plan</a>
                             </div>
                         </div>
                     </div>
@@ -253,7 +171,7 @@
                                 <div class="icon-outer"><i class="fas fa-gem"></i></div>
                             </div>
                             <div class="price-box">
-                                <div class="title">Full Pass</div>
+                                <div class="title">Per Year</div>
                                 <h4 class="price">$99.99</h4>
                             </div>
                             <ul class="features">
@@ -264,7 +182,7 @@
                                 <li class="false">Free Contacts</li>
                             </ul>
                             <div class="btn-box">
-                                <a href="https://codepen.io/anupkumar92" class="theme-btn">BUY plan</a>
+                                <a href="https://codepen.io/anupkumar92" class="theme-btn hover-card-button">Buy Plan</a>
                             </div>
                         </div>
                     </div>
@@ -287,7 +205,7 @@
                                 <li class="true">Free Contacts</li>
                             </ul>
                             <div class="btn-box">
-                                <a href="https://codepen.io/anupkumar92" class="theme-btn">BUY plan</a>
+                                <a href="https://codepen.io/anupkumar92" class="theme-btn">Buy Plan</a>
                             </div>
                         </div>
                     </div>
@@ -295,8 +213,9 @@
             </div>
         </div>
     </section>
+	</div>
 	<!-- Reputation Section Two -->
-	<div class="reputation-section-two style-two">
+	<div class="reputation-section-two style-two pt-5">
 		<div class="auto-container">
 			<div class="row clearfix">
 				
@@ -312,23 +231,17 @@
 									<!--Form Group-->
 									<div class="form-group">
 										<label>full name</label>
-										<input type="text" name="name" value="" placeholder="Jason Staham" required>
+										<input type="text" name="name" value="" placeholder="Enter your name"  formControlName="userName">
 									</div>
 									<!--Form Group-->
 									<div class="form-group">
-										<label>phone number</label>
+										<label>Email</label>
+										<input type="text" name="phone" value="" placeholder="Enter your Email" required>
+									</div>
+									<!--Form Group-->
+									<div class="form-group">
+										<label>Contact Number</label>
 										<input type="text" name="phone" value="" placeholder="Enter your phone number" required>
-									</div>
-									<!--Form Group-->
-									<div class="form-group">
-										<label>topics</label>
-										<select class="custom-select-box">
-											<option>Choose topic</option>
-											<option>Topic 01</option>
-											<option>Topic 02</option>
-											<option>Topic 03</option>
-											<option>Topic 04</option>
-										</select>
 									</div>
 									<!--Form Group-->
 									<div class="form-group">
@@ -336,7 +249,7 @@
 										<textarea name="message" placeholder="Write your message here"></textarea>
 									</div>
 									<div class="form-group">
-										<button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="txt">send your messenger</span></button>
+										<button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="txt">SUBMIT</span></button>
 									</div>
 								</form>
 							
@@ -387,84 +300,129 @@
 		</div>
 	</div>
 	<!-- End Reputation Section -->
+
 	
-	<!-- Testimonial Section -->
-	<div class="testimonial-section">
-		<div class="auto-container">
-			<div class="inner-container">
-			
-				<!-- Sec Title -->
-				<div class="sec-title">
-					<div class="title">testimonials</div>
-					<h2><span>+2,500 Clients </span>Love Us</h2>
+  <!-- Services Section -->
+  <div class="services-section">
+	<div class="auto-container">
+		<div class="sec-title">
+			<div class="title">our services</div>
+			<h2><span>Best Solutions</span> For Your Business</h2>
+		</div>
+  
+		<div class="inner-container">
+			<div class="row g-0">
+
+				<!-- Service Block -->
+				<div class="service-block col-lg-3 col-md-6 col-sm-12">
+					<div class="inner-box">
+						<div class="icon-box">
+							<span class="icon ti-blackboard"></span>
+						</div>
+						<h5><a (click)="onUpdateServices('IncomeTaxFiling')">Income tax return filing</a></h5>
+						<!-- <div class="text">Thought leadership pass the clap hackathon wearables.</div> -->
+						<a class="read-more" (click)="onUpdateServices('IncomeTaxFiling')">More <span
+								class="ti-angle-right"></span></a>
+					</div>
 				</div>
-				<div class="testimonial-carousel owl-carousel owl-theme">
-					
-					<!-- Testimonial Block -->
-					<div class="testimonial-block">
-						<div class="inner-box">
-							<div class="quote icofont-quote-right"></div>
-							<div class="author">Ryan Betthalyn <span>/ Director at Chobham Manor</span></div>
-							<div class="text">Sed elit quam, iaculis sed semper sit amet udin vitae nibh. Rubino at magna akal semperFusce commodo molestie luctus.Lorem ipsum Dolor tusima olatiup.</div>
+
+				<!-- Service Block -->
+				<div class="service-block col-lg-3 col-md-6 col-sm-12">
+					<div class="inner-box">
+						<div class="icon-box">
+							<span class="icon ti-stats-up"></span>
 						</div>
+						<h5><a (click)="onUpdateServices('GSTServices')">GST return filing</a></h5>
+						<!-- <div class="text">Platform omnichannel click thought leadership pivot</div> -->
+						<a class="read-more" (click)="onUpdateServices('GSTServices')">More <span
+								class="ti-angle-right"></span></a>
 					</div>
-					
-					<!-- Testimonial Block -->
-					<div class="testimonial-block">
-						<div class="inner-box">
-							<div class="quote icofont-quote-right"></div>
-							<div class="author">Bobs Hanley <span>/ Director at Spotify</span></div>
-							<div class="text">Sed elit quam, iaculis sed semper sit amet udin vitae nibh. Rubino at magna akal semperFusce commodo molestie luctus.Lorem ipsum Dolor tusima olatiup.</div>
-						</div>
-					</div>
-					
-					<!-- Testimonial Block -->
-					<div class="testimonial-block">
-						<div class="inner-box">
-							<div class="quote icofont-quote-right"></div>
-							<div class="author">Ryan Betthalyn <span>/ Director at Chobham Manor</span></div>
-							<div class="text">Sed elit quam, iaculis sed semper sit amet udin vitae nibh. Rubino at magna akal semperFusce commodo molestie luctus.Lorem ipsum Dolor tusima olatiup.</div>
-						</div>
-					</div>
-					
-					<!-- Testimonial Block -->
-					<div class="testimonial-block">
-						<div class="inner-box">
-							<div class="quote icofont-quote-right"></div>
-							<div class="author">Bobs Hanley <span>/ Director at Spotify</span></div>
-							<div class="text">Sed elit quam, iaculis sed semper sit amet udin vitae nibh. Rubino at magna akal semperFusce commodo molestie luctus.Lorem ipsum Dolor tusima olatiup.</div>
-						</div>
-					</div>
-					
 				</div>
-				
+
+				<!-- Service Block -->
+				<div class="service-block col-lg-3 col-md-6 col-sm-12">
+					<div class="inner-box">
+						<div class="icon-box">
+							<span class="icon ti-shield"></span>
+						</div>
+						<h5><a (click)="onUpdateServices('GSTAnnualReturn')">GST Annual Return</a></h5>
+						<!-- <div class="text">Disrupt taste makers help council emerging.</div> -->
+						<a class="read-more" (click)="onUpdateServices('GSTAnnualReturn')">More <span
+								class="ti-angle-right"></span></a>
+					</div>
+				</div>
+
+				<!-- Service Block -->
+				<div class="service-block col-lg-3 col-md-6 col-sm-12">
+					<div class="inner-box">
+						<div class="icon-box">
+							<span class="icon ti-home"></span>
+						</div>
+						<h5><a (click)="onUpdateServices('')">TDS return filing</a></h5>
+						<!-- <div class="text">Mobile ready proprietary dedication intuitive</div> -->
+						<a class="read-more" (click)="onUpdateServices('')">More <span
+								class="ti-angle-right"></span></a>
+					</div>
+				</div>
+
+				<!-- Service Block -->
+				<div class="service-block col-lg-3 col-md-6 col-sm-12">
+					<div class="inner-box">
+						<div class="icon-box">
+							<span class="icon ti-stamp"></span>
+						</div>
+						<h5><a (click)="onUpdateServices('GSTRegistration')">GST registration</a></h5>
+						<!-- <div class="text">Thought leadership pass the clap hackathon wearables.</div> -->
+						<a class="read-more" (click)="onUpdateServices('GSTRegistration')">More <span
+								class="ti-angle-right"></span></a>
+					</div>
+				</div>
+
+				<!-- Service Block -->
+				<div class="service-block col-lg-3 col-md-6 col-sm-12">
+					<div class="inner-box">
+						<div class="icon-box">
+							<span class="icon ti-money"></span>
+						</div>
+						<h5><a (click)="onUpdateServices('')">Payroll laws registration</a></h5>
+						<!-- <div class="text">Disrupt taste makers help council emerging.</div> -->
+						<a class="read-more" (click)="onUpdateServices('')">More <span
+								class="ti-angle-right"></span></a>
+					</div>
+				</div>
+
+				<!-- Service Block -->
+				<div class="service-block col-lg-3 col-md-6 col-sm-12">
+					<div class="inner-box">
+						<div class="icon-box">
+							<span class="icon ti-shopping-cart-full"></span>
+						</div>
+						<h5><a (click)="onUpdateServices('')">Labour law registrations</a></h5>
+						<!-- <div class="text">Mobile ready proprietary dedication intuitive</div> -->
+						<a class="read-more" (click)="onUpdateServices('')">More <span
+								class="ti-angle-right"></span></a>
+					</div>
+				</div>
+
+				<!-- Service Block -->
+				<div class="service-block col-lg-3 col-md-6 col-sm-12">
+					<div class="inner-box">
+						<div class="icon-box">
+							<span class="icon ti-truck"></span>
+						</div>
+						<h5><a (click)="onUpdateServices('')">Other Services</a></h5>
+						<!-- <div class="text">Platform omnichannel click thought leadership pivot</div> -->
+						<a class="read-more" (click)="onUpdateServices('')">More <span
+								class="ti-angle-right"></span></a>
+					</div>
+				</div>
+
 			</div>
+
 		</div>
 	</div>
-	<!-- End Testimonial Section -->
-	
-	<!-- Sponsors Section -->
-	<div class="sponsors-section">
-		<div class="auto-container">
-			
-			<div class="carousel-outer">
-                <!--Sponsors Slider-->
-                <ul class="sponsors-carousel owl-carousel owl-theme">
-                    <li><div class="image-box"><a href="#"><img src="assets/images/clients/1.png" alt=""></a></div></li>
-                    <li><div class="image-box"><a href="#"><img src="assets/images/clients/2.png" alt=""></a></div></li>
-                    <li><div class="image-box"><a href="#"><img src="assets/images/clients/3.png" alt=""></a></div></li>
-                    <li><div class="image-box"><a href="#"><img src="assets/images/clients/4.png" alt=""></a></div></li>
-					<li><div class="image-box"><a href="#"><img src="assets/images/clients/5.png" alt=""></a></div></li>
-                    <li><div class="image-box"><a href="#"><img src="assets/images/clients/1.png" alt=""></a></div></li>
-                    <li><div class="image-box"><a href="#"><img src="assets/images/clients/2.png" alt=""></a></div></li>
-                    <li><div class="image-box"><a><img src="assets/images/clients/3.png" alt=""></a></div></li>
-                </ul>
-            </div>
-			
-		</div>
-	</div>
-	<!--End Sponsors Section-->
-	
+</div>
+<!-- End Services Section -->
 
 	
 </div>

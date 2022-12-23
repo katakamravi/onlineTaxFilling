@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { DataHandlerService } from '../services/dataHandler.service';
 
 @Component({
   selector: 'app-header',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _dataHandlerService: DataHandlerService, private router: Router) { }
 
   ngOnInit(): void {
   }
 
+  onUpdateServices(data: any) {
+  this.router.navigate(['services'], { queryParams: { page: data } });
+  this._dataHandlerService.UpdateServicesData(data);
+  }
+  
 }

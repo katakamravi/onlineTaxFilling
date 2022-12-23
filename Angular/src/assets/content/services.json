@@ -1,148 +1,1028 @@
 {
-    "services": {
-        "IncomeTaxFiling": {
-            "title": "Income Tax Filing",
-            "description": "abcds",
-            "sections": [
-                {
-                    "title": "Individual Return Filing",
-                    "description": "An income tax (IT) return is a tax form to be filled with details of your income and taxes, and submitted electronically to the Income-tax Department.Income tax return forms range from ITR 1 to ITR 7, used for different types of income and different types of entities. Depending on the type of forms, there are various disclosure requirements. You need not worry about your category as Online Tax Filings handles it for you automatically.The tax returns must be filed every year and must be filed by a specific date. If the return shows excess tax has been paid during a given year, you are eligible for ‘income tax refund’, subject to the department’s interpretations and calculations..<br/>",
-                    "DocumentsRequired": [
-                        {
-                            "name": "Form-16",
-                            "tooltip": "Form-16 is a TDS certificate issued to you by your employer to provide details of the salary paid to you and TDS deducted on it, if any. It is mandatory for your employer to issue Form-16 if your employer has deducted TDS from your salary. If no TDS is deducted from your salary, then you can request your employer to provide you the same."
-                        },
-                        {
-                            "name": "PAN Card",
-                            "tooltip": "Form-16 is a Proof of Identity."
-                        },
-                        {
-                            "name": "Tax-saving investment proofs",
-                            "tooltip": "All the tax-saving investments made by you and the expenditures incurred by you eligible for deduction under section 80C, 80CCC and 80CCD(1) during FY2019-20 can help you lower your tax liability. The maximum tax-break you can claim under these three sections combined cannot exceed Rs 1.5 lakh in a financial year."
-                        },
-                        {
-                            "name": "Aadhaar card",
-                            "tooltip": ""
-                        },
-                        {
-                            "name": "Salary slips",
-                            "tooltip": "You may need your salary slips, as ITR 2 form released by the income tax department, asks individuals to specify the nature of salary income such as basic, dearness allowance, house rent allowance and so on. "
-                        }
-                    ],
-                    "Amount": 1500,
-                    "isGST": false
-                },
-                {
-                    "Business Return Filing": {
-                        "title": "Business Return Filing",
-                        "description": "An income tax (IT) return is a tax form to be filled with details of your income and taxes, and submitted electronically to the Income-tax Department.Income tax return forms range from ITR 1 to ITR 7, used for different types of income and different types of entities. Depending on the type of forms, there are various disclosure requirements. You need not worry about your category as Online Tax Filings handles it for you automatically.The tax returns must be filed every year and must be filed by a specific date. If the return shows excess tax has been paid during a given year, you are eligible for ‘income tax refund’, subject to the department’s interpretations and calculations..<br/>",
-                        "DocumentsRequired": [
-                            {
-                                "name": "Sales and Purchases Data",
-                                "tooltip": "Form-16 is a TDS certificate issued to you by your employer to provide details of the salary paid to you and TDS deducted on it, if any. It is mandatory for your employer to issue Form-16 if your employer has deducted TDS from your salary. If no TDS is deducted from your salary, then you can request your employer to provide you the same."
-                            },
-                            {
-                                "name": "PAN Card ",
-                                "tooltip": "Form-16 is a Proof of Identity."
-                            },
-                            {
-                                "name": "Tax-saving investment proofs",
-                                "tooltip": "All the tax-saving investments made by you and the expenditures incurred by you eligible for deduction under section 80C, 80CCC and 80CCD(1) during FY2019-20 can help you lower your tax liability. The maximum tax-break you can claim under these three sections combined cannot exceed Rs 1.5 lakh in a financial year."
-                            },
-                            {
-                                "name": "Aadhaar card",
-                                "tooltip": ""
-                            },
-                            {
-                                "name": "Salary slips",
-                                "tooltip": "You may need your salary slips, as ITR 2 form released by the income tax department, asks individuals to specify the nature of salary income such as basic, dearness allowance, house rent allowance and so on. "
-                            }
-                        ],
-                        "Amount": 1500,
-                        "isGST": false
-                    }
-                }
-            ]
-        },
-        "GSTRegistration": {
-            "title": "GST Registration",
-            "description": " Goods & Services Tax (GST) applies to all Indian service providers (including freelancers), traders and manufacturers. A variety of Central taxes like Service Tax, Excise Duty, CST and state taxes like Entertainment Tax, Luxury Tax, Octroi, VAT are absorbed in one tax – GST, implemented on 01.07.2017.  GST is to be charged at every step of the supply chain, with full set-off benefits available. The procedure for GST is entirely online and requires no manual intervention.",
-            "DocumentsRequired": {
-                "categories": [
-                    {
-                        "categoryName": "Sole proprietor / Individual",
-                        "documentsRequired": [
-                            "PAN card of the owner",
-                            "Aadhar card of the owner",
-                            "Photograph of the owner (in JPEG format, maximum size – 100 KB)",
-                            "Bank account details*",
-                            "Address proof**"
-                        ]
-                    },
-                    {
-                        "categoryName": "Partnership firm (including LLP)",
-                        "documentsRequired": [
-                            "PAN card of all partners (including managing partner and authorized signatory)",
-                            "Copy of partnership deed",
-                            "Photograph of all partners and authorised signatories (in JPEG format, maximum size – 100 KB)",
-                            "Address proof of partners (Passport, driving license, Voters identity card, Aadhar card etc.)",
-                            "Aadhar card of authorised signatory",
-                            "Proof of appointment of authorized signatory",
-                            "In the case of LLP, registration certificate / Board resolution of LLP",
-                            "Bank account details*",
-                            "Address proof of principal place of business**"
-                        ]
-                    },
-                    {
-                        "categoryName": "Company (Public and Private) (Indian and foreign)",
-                        "documentsRequired": [
-                            "PAN card of Company",
-                            "Certificate of incorporation given by Ministry of Corporate Affairs",
-                            "Memorandum of Association / Articles of Association",
-                            "PAN card and Aadhar card of authorized signatory. The authorised signatory must be an Indian even in case of foreign companies/branch registration",
-                            "PAN card and address proof of all directors of the Company",
-                            "Photograph of all directors and authorised signatory (in JPEG format, maximum size – 100 KB)",
-                            "Board resolution appointing authorised signatory / Any other proof of appointment of authorised signatory (in JPEG format / PDF format, maximum size – 100 KB)",
-                            "Bank account details",
-                            "Address proof of principal place of business"
-                        ]
-                    }
-                ]
+  "services": {
+    "Startup": {
+      "title": "Start Up",
+      "description": "abcds",
+      "hasSections": true,
+      "sections": [
+        {
+          "title": "proprietorShip",
+          "description": "When a business is owned and governed by one person, it is called a sole proprietorship company. This type of business can be incorporated in fifteen days and hence makes it one of the most popular types of business to begin in the unsystematic sector, specifically among merchants and small traders. For a Sole Proprietorship business, registration is not required as it is identified through alternate registrations, such as GST registrations. However, its liability is unlimited and it also doesn’t have perpetual existence.",
+          "DocumentsRequired": [
+            {
+              "name": "Address and identity proof",
+              "tooltip": ""
             },
-            "Amount": 1000,
-            "isGST": true
+            {
+              "name": "PAN card, KYC documents",
+              "tooltip": "Form-16 is a Proof of Identity."
+            },
+            {
+              "name": "Rental agreement or sale deed (in case of Shops & Establishment Act Registration).",
+              "tooltip": ""
+            }
+          ]
         },
-        "AmendentFiling": {
-            "title": "Amendent Filing",
-            "description": "Amendment refers to alteration or addition to any contract, agreement, laws, and regulations. An amendment can also be made by way of an addendum or modification are made to some of the terms of an agreement or contract. In case there are substantial changes, the existing agreement or contract may need to be substituted with a new one.",
-            "DocumentsRequired": [],
-            "Amount": 2000,
-            "isGST": false
+        {
+          "title": "partnerShip",
+          "description": "Limited Liability Partnership (LLP) combines the benefits of a partnership with that of a limited liability company. In India, it took shape after January 2009 and was an instant success with startups and professional services. The idea behind LLP was to provide a form of business that is easy to maintain and benefit owners with limited liability.",
+          "DocumentsRequired": [
+            {
+              "name": "Address and identity proof",
+              "tooltip": ""
+            },
+            {
+              "name": "Aadhar card/ voter’s ID/ passport/ driving license",
+              "tooltip": "Form-16 is a Proof of Identity."
+            },
+            {
+              "name": "Latest bank statement/ telephone bill/ mobile bill/ electricity bill/ gas bill",
+              "tooltip": ""
+            },
+            {
+              "name": "Passport-size photograph",
+              "tooltip": "Form-16 is a Proof of Identity."
+            },
+            {
+              "name": "Blank document with specimen signature.",
+              "tooltip": ""
+            }
+          ]
         },
-        "NewBusiness": {
-            "title": "New Business",
-            "description": "It includes PROPRIETORSHIP, PARTNERSHIP FIRM, PRIVATE LIMITED COMPANY, LIMITED LIABILITY PARTNERSHIP, ONE PERSON COMPANY, PUBLIC LIMITED COMPANY, SECTION 8 COMPANY. To start the businees of mentioned types what are the documents required and amount will classify below.",
-            "DocumentsRequired": [],
-            "Amount": 2000,
-            "isGST": false
+        {
+          "title": "Association Of Workers",
+          "description": "When a business is owned and governed by one person, it is called a sole proprietorship company. This type of business can be incorporated in fifteen days and hence makes it one of the most popular types of business to begin in the unsystematic sector, specifically among merchants and small traders. For a Sole Proprietorship business,"
         },
-        "TDSPreparation": {
-            "title": "TDS Preparation",
-            "description": "Bank statement/passbook for interest on savings account. Interest income statement for fixed deposits. TDS certificate issued by banks and others",
-            "DocumentsRequired": [],
-            "Amount": 2000,
-            "isGST": false
+        {
+          "title": "One Person Company",
+          "description": "The Companies Act of 2013 supported the formation of one person company in India. It governs the registration and functioning of one person company in India. In comparison with a public company a private company should have at least two directors and two members however on the contrary one person company doesn't need any group of people to be incorporated. Up until recently, a company could only be incorporated by a group of people. An organisation with a single owner is known as a one-person company in India. Only two people could form a company prior to the implementation of the Companies Act of 2013.",
+          "DocumentsRequired": [
+            {
+              "name": "Passport or PAN card",
+              "tooltip": ""
+            },
+            {
+              "name": "Passport size photo",
+              "tooltip": ""
+            },
+            {
+              "name": "Specimen signature",
+              "tooltip": ""
+            },
+            {
+              "name": "No objection certificate",
+              "tooltip": ""
+            },
+            {
+              "name": "Rental agreement",
+              "tooltip": ""
+            },
+            {
+              "name": "Address proof of directors",
+              "tooltip": ""
+            },
+            {
+              "name": "Identity proof of directors For NRIs and foreign nationals, a passport",
+              "tooltip": ""
+            },
+            {
+              "name": "Voter id",
+              "tooltip": ""
+            },
+            {
+              "name": "Drivers license",
+              "tooltip": ""
+            },
+            {
+              "name": "Updated gas or electricity bills",
+              "tooltip": ""
+            },
+            {
+              "name": "Bank account statements, and phone bills for mobile or landlines",
+              "tooltip": ""
+            },
+            {
+              "name": "A sample signature.",
+              "tooltip": ""
+            }
+          ]
         },
-        "IntellectualProperty": {
-            "title": "Intellectual Property",
-            "description": "An intellectual property document is a document which proves intellectual property rights. It is a legal document stating the ownership or rights for intellectual property.",
-            "DocumentsRequired": [
-                "Trademark License",
-                "Proof of Patent",
-                "Copyright Ownership"
-            ],
-            "Amount": 2000,
-            "isGST": false
+        {
+          "title": "Limited Liability Partnership",
+          "description": "When a business is owned and governed by one person, it is called a sole proprietorship company. This type of business can be incorporated in fifteen days and hence makes it one of the most popular types of business to begin in the unsystematic sector, specifically among merchants and small traders. For a Sole Proprietorship business,",
+          "DocumentsRequired": [
+            {
+              "name": "Address and identity proof",
+              "tooltip": ""
+            },
+            {
+              "name": "Aadhar card/ voter’s ID/ passport/ driving license",
+              "tooltip": "Form-16 is a Proof of Identity."
+            },
+            {
+              "name": "Latest bank statement/ telephone bill/ mobile bill/ electricity bill/ gas bill",
+              "tooltip": ""
+            },
+            {
+              "name": "Passport-size photograph",
+              "tooltip": "Form-16 is a Proof of Identity."
+            },
+            {
+              "name": "Blank document with specimen signature.",
+              "tooltip": ""
+            }
+          ]
+        },
+        {
+          "title": "private Limited Company",
+          "description": "Setting up a private limited company is one of the highly recommended ways to start a business in India. This type of company offers limited liability for its shareholders with certain restrictions placed on the ownership. An LLP has partners, who own and manage the business. Whereas in private limited company registration, directors may be different from shareholders.",
+          "DocumentsRequired": [
+            {
+              "name": "Scanned copy of PAN card or passport (foreign nationals & NRIs)",
+              "tooltip": ""
+            },
+            {
+              "name": "Scanned copy of voter ID/passport/driving licence",
+              "tooltip": "Form-16 is a Proof of Identity."
+            },
+            {
+              "name": "Scanned copy of the latest bank statement/telephone or mobile bill/electricity or gas bill",
+              "tooltip": ""
+            },
+            {
+              "name": "Scanned passport-sized photograph specimen signature (blank document with signature [directors only])",
+              "tooltip": ""
+            },
+            {
+              "name": "Scanned copy of notarized rental agreement in English",
+              "tooltip": ""
+            },
+            {
+              "name": "Scanned copy of no-objection certificate from the property owner",
+              "tooltip": ""
+            },
+            {
+              "name": "Scanned copy of sale deed/property deed in English (in case of owned property)",
+              "tooltip": ""
+            }
+          ]
+        },
+        {
+          "title": "Section8 Company",
+          "description": "A Section 8 company under the Companies Act, 2013 or a Section 25 Company as per the Companies Act,1956 is an organization registered with an objective of promoting the fine arts, science, literature, or knowledge sharing for a purposeful matter or for charity. These are the limited companies established under the Companies Act. The Government grants these companies an exclusive license under Section 8 Companies Act.",
+          "DocumentsRequired": [
+            {
+              "name": "DSC and DIN of the Directors. ",
+              "tooltip": ""
+            },
+            {
+              "name": "Objectives and proposed work of the company.",
+              "tooltip": ""
+            },
+            {
+              "name": "Financial statements like assets and liabilities, the projection for five years etc.",
+              "tooltip": ""
+            },
+            {
+              "name": "Directors personal documents.",
+              "tooltip": ""
+            },
+            {
+              "name": "Registered office address documents viz. rental agreement or sale deed in the name of the company, utility bills not older than two months.",
+              "tooltip": ""
+            }
+          ]
         }
+      ]
+    },
+    "IncomeTaxFiling": {
+      "title": "Income Tax Filing",
+      "description": "abcds",
+      "hasSections": true,
+      "sections": [
+        {
+          "title": "Individual",
+          "description": "An income tax (IT) return is a tax form to be filled with details of your income and taxes, and submitted electronically to the Income-tax Department.Income tax return forms range from ITR 1 to ITR 7, used for different types of income and different types of entities. Depending on the type of forms, there are various disclosure requirements. You need not worry about your category as Online Tax Filings handles it for you automatically.The tax returns must be filed every year and must be filed by a specific date. If the return shows excess tax has been paid during a given year, you are eligible for ‘income tax refund’, subject to the department’s interpretations and calculations.",
+          "DocumentsRequired": [
+            {
+              "name": "Form-16",
+              "tooltip": "Form-16 is a TDS certificate issued to you by your employer to provide details of the salary paid to you and TDS deducted on it, if any. It is mandatory for your employer to issue Form-16 if your employer has deducted TDS from your salary. If no TDS is deducted from your salary, then you can request your employer to provide you the same."
+            },
+            {
+              "name": "PAN Card",
+              "tooltip": ""
+            },
+            {
+              "name": "Tax-saving investment proofs",
+              "tooltip": "All the tax-saving investments made by you and the expenditures incurred by you eligible for deduction under section 80C, 80CCC and 80CCD(1) during FY2019-20 can help you lower your tax liability. The maximum tax-break you can claim under these three sections combined cannot exceed Rs 1.5 lakh in a financial year."
+            },
+            {
+              "name": "Aadhaar card",
+              "tooltip": ""
+            },
+            {
+              "name": "Salary slips",
+              "tooltip": "You may need your salary slips, as ITR 2 form released by the income tax department, asks individuals to specify the nature of salary income such as basic, dearness allowance, house rent allowance and so on. "
+            }
+          ]
+        },
+        {
+          "title": "Business",
+          "description": "An income tax (IT) return is a tax form to be filled with details of your income and taxes, and submitted electronically to the Income-tax Department.Income tax return forms range from ITR 1 to ITR 7, used for different types of income and different types of entities. Depending on the type of forms, there are various disclosure requirements. You need not worry about your category as Online Tax Filings handles it for you automatically.The tax returns must be filed every year and must be filed by a specific date. If the return shows excess tax has been paid during a given year, you are eligible for ‘income tax refund’, subject to the department’s interpretations and calculations.",
+          "DocumentsRequired": [
+            {
+              "name": "Trading report",
+              "tooltip": "Form-16 is a TDS certificate issued to you by your employer to provide details of the salary paid to you and TDS deducted on it, if any. It is mandatory for your employer to issue Form-16 if your employer has deducted TDS from your salary. If no TDS is deducted from your salary, then you can request your employer to provide you the same."
+            },
+            {
+              "name": "Business account details",
+              "tooltip": "a report sent to the Exchange containing the terms of an agreed Bilaterally Negotiated Trade."
+            },
+            {
+              "name": "Profit and loss statement if any",
+              "tooltip": ""
+            }
+          ]
+        },
+        {
+          "title": "TDS Returns",
+          "description": "The concept of TDS was introduced to collect the taxes at the sources of income. According to this idea, a person (deductor) who is required to make a payment to another person (deductee) must withhold tax at source and remit it into the central government's account. On the basis of Form 26AS or a TDS certificate issued by the deductor, the deductee from whose income tax source deductions have been made is entitled to receive credit for the amount so deducted. Online TDS return is a statement given to the IT department on every quarter. It is essential for every deductor to deposit income tax and file for TDS return on time. Vakilsearch assists and guides you on online TDS return in 3 easy steps. The process is very easy and can be done with no delays.",
+          "DocumentsRequired": [
+            {
+              "name": "TAN details",
+              "tooltip": "Form-16 is a TDS certificate issued to you by your employer to provide details of the salary paid to you and TDS deducted on it, if any. It is mandatory for your employer to issue Form-16 if your employer has deducted TDS from your salary. If no TDS is deducted from your salary, then you can request your employer to provide you the same."
+            },
+            {
+              "name": "PAN details",
+              "tooltip": "Form-16 is a Proof of Identity."
+            },
+            {
+              "name": "Last TDS filing details, if applicable",
+              "tooltip": ""
+            },
+            {
+              "name": "The period for which TDS has to be filed",
+              "tooltip": ""
+            },
+            {
+              "name": "Date of incorporation of the business",
+              "tooltip": ""
+            },
+            {
+              "name": "No. of transactions for filing TDS returns",
+              "tooltip": ""
+            },
+            {
+              "name": "Name of the entity - Proprietorship/ Partnership/ Company/ LLP",
+              "tooltip": ""
+            }
+          ]
+        }
+      ]
+    },
+    "GSTServices": {
+      "title": "GST Services",
+      "description": " Goods & Services Tax (GST) applies to all Indian service providers (including freelancers), traders and manufacturers. A variety of Central taxes like Service Tax, Excise Duty, CST and state taxes like Entertainment Tax, Luxury Tax, Octroi, VAT are absorbed in one tax – GST, implemented on 01.07.2017.  GST is to be charged at every step of the supply chain, with full set-off benefits available. The procedure for GST is entirely online and requires no manual intervention.",
+      "hasSections": true,
+      "sections": [
+        {
+          "title": "GST Registration",
+          "description": "An income tax (IT) return is a tax form to be filled with details of your income and taxes, and submitted electronically to the Income-tax Department.Income tax return forms range from ITR 1 to ITR 7, used for different types of income and different types of entities. Depending on the type of forms, there are various disclosure requirements. You need not worry about your category as Online Tax Filings handles it for you automatically.The tax returns must be filed every year and must be filed by a specific date. If the return shows excess tax has been paid during a given year, you are eligible for ‘income tax refund’, subject to the department’s interpretations and calculations.",
+          "hasDocumentSections": true,
+          "DocumentsRequired": [
+            {
+            "Proprietorship": {
+             "Sections": [{
+                "name": "PAN Card of LLP",
+                "tooltip": ""
+              }
+            ]
+            },
+            "LLP": {
+              "Sections": [
+                {
+                 "name": "PAN Card of LLP",
+                 "tooltip": ""
+               },
+               {
+                "name": "LLP Agreement",
+                "tooltip": ""
+              },
+              {
+                "name": "Partners’ names and address proof",
+                "tooltip": ""
+              }
+            ]
+            },
+            "Private Limited Company": {
+              "Sections": [
+                {
+                 "name": "Certificate of Incorporation",
+                 "tooltip": ""
+               },
+               {
+                "name": "PAN Card of Company",
+                "tooltip": ""
+              },
+              {
+                "name": "Articles of Association, AOA",
+                "tooltip": ""
+              },
+              {
+                "name": "Memorandum of Association, MOA",
+                "tooltip": ""
+              },
+              {
+                "name": "Resolution signed by board members",
+                "tooltip": ""
+              },
+              {
+                "name": "Identity and address proof of directors",
+                "tooltip": ""
+              },
+              {
+                "name": "Digital Signature",
+                "tooltip":""
+              }
+            ]
+            }
+        }
+          ],
+          "Amount": 1500,
+          "isGST": false
+        },
+        {
+          "title": "GST FIling",
+          "description": "An income tax (IT) return is a tax form to be filled with details of your income and taxes, and submitted electronically to the Income-tax Department.Income tax return forms range from ITR 1 to ITR 7, used for different types of income and different types of entities. Depending on the type of forms, there are various disclosure requirements. You need not worry about your category as Online Tax Filings handles it for you automatically.The tax returns must be filed every year and must be filed by a specific date. If the return shows excess tax has been paid during a given year, you are eligible for ‘income tax refund’, subject to the department’s interpretations and calculations.",
+          "DocumentsRequired": [
+            {
+              "name": "Invoices issued to persons with GSTIN or B2B invoices ",
+              "tooltip": ""
+            },
+            {
+              "name": "Invoices issued to persons without GSTIN or B2C invoices. This needs to be submitted only when its total value is above 2.5 lakhs.",
+              "tooltip": ""
+            },
+            {
+              "name": "A consolidation of inter-state sales.",
+              "tooltip": ""
+            },
+            {
+              "name": "HSN-wise summary of all goods sold.",
+              "tooltip": ""
+            },
+            {
+              "name": "Any other debit or credit notes or advance receipts.",
+              "tooltip": ""
+            }
+          ],
+          "Amount": 1500,
+          "isGST": false
+        },
+        {
+          "title": "GST Annual Return",
+          "description": "When a business is owned and governed by one person, it is called a sole proprietorship company. This type of business can be incorporated in fifteen days and hence makes it one of the most popular types of business to begin in the unsystematic sector, specifically among merchants and small traders. For a Sole Proprietorship business,",
+          "DocumentsRequired": [
+            {
+              "name": "Invoices issued to persons with GSTIN or B2B invoices ",
+              "tooltip": ""
+            },
+            {
+              "name": "Invoices issued to persons without GSTIN or B2C invoices. This needs to be submitted only when its total value is above 2.5 lakhs.",
+              "tooltip": ""
+            },
+            {
+              "name": "A consolidation of inter-state sales.",
+              "tooltip": ""
+            },
+            {
+              "name": "HSN-wise summary of all goods sold.",
+              "tooltip": ""
+            },
+            {
+              "name": "Any other debit or credit notes or advance receipts.",
+              "tooltip": ""
+            }
+          ]
+        }
+      ],
+      "DocumentsRequired": {
+        "categories": [
+          {
+            "categoryName": "Sole proprietor / Individual",
+            "documentsRequired": [
+              "PAN card of the owner",
+              "Aadhar card of the owner",
+              "Photograph of the owner (in JPEG format, maximum size – 100 KB)",
+              "Bank account details*",
+              "Address proof**"
+            ]
+          },
+          {
+            "categoryName": "Partnership firm (including LLP)",
+            "documentsRequired": [
+              "PAN card of all partners (including managing partner and authorized signatory)",
+              "Copy of partnership deed",
+              "Photograph of all partners and authorised signatories (in JPEG format, maximum size – 100 KB)",
+              "Address proof of partners (Passport, driving license, Voters identity card, Aadhar card etc.)",
+              "Aadhar card of authorised signatory",
+              "Proof of appointment of authorized signatory",
+              "In the case of LLP, registration certificate / Board resolution of LLP",
+              "Bank account details*",
+              "Address proof of principal place of business**"
+            ]
+          },
+          {
+            "categoryName": "Company (Public and Private) (Indian and foreign)",
+            "documentsRequired": [
+              "PAN card of Company",
+              "Certificate of incorporation given by Ministry of Corporate Affairs",
+              "Memorandum of Association / Articles of Association",
+              "PAN card and Aadhar card of authorized signatory. The authorised signatory must be an Indian even in case of foreign companies/branch registration",
+              "PAN card and address proof of all directors of the Company",
+              "Photograph of all directors and authorised signatory (in JPEG format, maximum size – 100 KB)",
+              "Board resolution appointing authorised signatory / Any other proof of appointment of authorised signatory (in JPEG format / PDF format, maximum size – 100 KB)",
+              "Bank account details",
+              "Address proof of principal place of business"
+            ]
+          }
+        ]
+      },
+      "Amount": 1000,
+      "isGST": true
+    },
+    "otherServices": {
+      "title": "Other Services",
+      "description": "",
+      "hasSections": true,
+      "sections": [
+        {
+          "title": "MSME Registration",
+          "description": "Amendment refers to alteration or addition to any contract, agreement, laws, and regulations. An amendment can also be made by way of an addendum or modification are made to some of the terms of an agreement or contract. In case there are substantial changes, the existing agreement or contract may need to be substituted with a new one.",
+          "Amount": 1500,
+          "isGST": false
+        },
+        {
+          "title": "IEC Registration",
+          "description": "Import Export Code (also known as IEC) is a 10 digit identification number that is issued by the Department of Commerce",
+          "Amount": 1500,
+          "isGST": false
+        },
+        {
+          "title": "Digital Signature",
+          "description": "A Digital Signature Certificate (DSC) is a secure digital key that certifies the identity of the holder, issued by a Certifying Authority (CA). It typically contains your identity (name, email, country, APNIC account name and your public key). Digital Certificates use Public Key Infrastructure meaning data that has been digitally signed or encrypted by a private key can only be decrypted by its corresponding public key. A Digital Signature is the equivalent of a physical signature in electronic format, as it establishes the identity of the sender of an electronic document on the Internet. It comes in the form of a USB E-Token, wherein the Digital Signature Certificate is stored and can be accessed through a computer to sign documents electronically."
+        },
+        {
+          "title": "PAN Card",
+          "description": "The Permanent Account Number (PAN) card, issued by the Income-tax Department, is one of the most important documents nowadays. The card was issued in order to prevent tax evasion by individuals and entities as it links all financial transactions made by a particular individual or entity."
+        }
+      ],
+      "DocumentsRequired": {
+        "categories": [
+          {
+            "categoryName": "Sole proprietor / Individual",
+            "documentsRequired": [
+              "PAN card of the owner",
+              "Aadhar card of the owner",
+              "Photograph of the owner (in JPEG format, maximum size – 100 KB)",
+              "Bank account details*",
+              "Address proof**"
+            ]
+          },
+          {
+            "categoryName": "Partnership firm (including LLP)",
+            "documentsRequired": [
+              "PAN card of all partners (including managing partner and authorized signatory)",
+              "Copy of partnership deed",
+              "Photograph of all partners and authorised signatories (in JPEG format, maximum size – 100 KB)",
+              "Address proof of partners (Passport, driving license, Voters identity card, Aadhar card etc.)",
+              "Aadhar card of authorised signatory",
+              "Proof of appointment of authorized signatory",
+              "In the case of LLP, registration certificate / Board resolution of LLP",
+              "Bank account details*",
+              "Address proof of principal place of business**"
+            ]
+          },
+          {
+            "categoryName": "Company (Public and Private) (Indian and foreign)",
+            "documentsRequired": [
+              "PAN card of Company",
+              "Certificate of incorporation given by Ministry of Corporate Affairs",
+              "Memorandum of Association / Articles of Association",
+              "PAN card and Aadhar card of authorized signatory. The authorised signatory must be an Indian even in case of foreign companies/branch registration",
+              "PAN card and address proof of all directors of the Company",
+              "Photograph of all directors and authorised signatory (in JPEG format, maximum size – 100 KB)",
+              "Board resolution appointing authorised signatory / Any other proof of appointment of authorised signatory (in JPEG format / PDF format, maximum size – 100 KB)",
+              "Bank account details",
+              "Address proof of principal place of business"
+            ]
+          }
+        ]
+      },
+      "Amount": 1000,
+      "isGST": true
+    },
+    "AmendentFiling": {
+      "title": "Amendent Filing",
+      "description": "Amendment refers to alteration or addition to any contract, agreement, laws, and regulations. An amendment can also be made by way of an addendum or modification are made to some of the terms of an agreement or contract. In case there are substantial changes, the existing agreement or contract may need to be substituted with a new one.",
+      "DocumentsRequired": [],
+      "Amount": 2000,
+      "isGST": false,
+      "hasSections": false
+    },
+    "NewBusiness": {
+      "title": "New Business",
+      "description": "It includes PROPRIETORSHIP, PARTNERSHIP FIRM, PRIVATE LIMITED COMPANY, LIMITED LIABILITY PARTNERSHIP, ONE PERSON COMPANY, PUBLIC LIMITED COMPANY, SECTION 8 COMPANY. To start the businees of mentioned types what are the documents required and amount will classify below.",
+      "DocumentsRequired": [],
+      "Amount": 2000,
+      "isGST": false,
+      "hasSections": true
+    },
+    "TDSPreparation": {
+      "title": "TDS Preparation",
+      "description": "Bank statement/passbook for interest on savings account. Interest income statement for fixed deposits. TDS certificate issued by banks and others",
+      "DocumentsRequired": [],
+      "Amount": 2000,
+      "isGST": false,
+      "hasSections": false
+    },
+    "IntellectualProperty": {
+      "title": "Intellectual Property",
+      "description": "An intellectual property document is a document which proves intellectual property rights. It is a legal document stating the ownership or rights for intellectual property.",
+      "DocumentsRequired": [
+        "Trademark License",
+        "Proof of Patent",
+        "Copyright Ownership"
+      ],
+      "Amount": 2000,
+      "isGST": false,
+      "hasSections": false
+    },
+    "Individual": {
+      "title": "Individual",
+      "description": "An income tax (IT) return is a tax form to be filled with details of your income and taxes, and submitted electronically to the Income-tax Department.Income tax return forms range from ITR 1 to ITR 7, used for different types of income and different types of entities. Depending on the type of forms, there are various disclosure requirements. You need not worry about your category as Online Tax Filings handles it for you automatically.The tax returns must be filed every year and must be filed by a specific date. If the return shows excess tax has been paid during a given year, you are eligible for ‘income tax refund’, subject to the department’s interpretations and calculations.",
+      "DocumentsRequired": [
+        {
+          "name": "Form-16",
+          "tooltip": "Form-16 is a TDS certificate issued to you by your employer to provide details of the salary paid to you and TDS deducted on it, if any. It is mandatory for your employer to issue Form-16 if your employer has deducted TDS from your salary. If no TDS is deducted from your salary, then you can request your employer to provide you the same."
+        },
+        {
+          "name": "PAN Card",
+          "tooltip": "Form-16 is a Proof of Identity."
+        },
+        {
+          "name": "Tax-saving investment proofs",
+          "tooltip": "All the tax-saving investments made by you and the expenditures incurred by you eligible for deduction under section 80C, 80CCC and 80CCD(1) during FY2019-20 can help you lower your tax liability. The maximum tax-break you can claim under these three sections combined cannot exceed Rs 1.5 lakh in a financial year."
+        },
+        {
+          "name": "Aadhaar card",
+          "tooltip": ""
+        },
+        {
+          "name": "Salary slips",
+          "tooltip": "You may need your salary slips, as ITR 2 form released by the income tax department, asks individuals to specify the nature of salary income such as basic, dearness allowance, house rent allowance and so on. "
+        }
+      ],
+      "Amount": 1500,
+      "hasSections": false
+    },
+    "Bussiness": {
+      "title": "Business",
+      "description": "An income tax (IT) return is a tax form to be filled with details of your income and taxes, and submitted electronically to the Income-tax Department.Income tax return forms range from ITR 1 to ITR 7, used for different types of income and different types of entities. Depending on the type of forms, there are various disclosure requirements. You need not worry about your category as Online Tax Filings handles it for you automatically.The tax returns must be filed every year and must be filed by a specific date. If the return shows excess tax has been paid during a given year, you are eligible for ‘income tax refund’, subject to the department’s interpretations and calculations.",
+      "DocumentsRequired": [
+        {
+          "name": "Sales and Purchases Data",
+          "tooltip": "Form-16 is a TDS certificate issued to you by your employer to provide details of the salary paid to you and TDS deducted on it, if any. It is mandatory for your employer to issue Form-16 if your employer has deducted TDS from your salary. If no TDS is deducted from your salary, then you can request your employer to provide you the same."
+        },
+        {
+          "name": "PAN Card ",
+          "tooltip": "Form-16 is a Proof of Identity."
+        },
+        {
+          "name": "Tax-saving investment proofs",
+          "tooltip": "All the tax-saving investments made by you and the expenditures incurred by you eligible for deduction under section 80C, 80CCC and 80CCD(1) during FY2019-20 can help you lower your tax liability. The maximum tax-break you can claim under these three sections combined cannot exceed Rs 1.5 lakh in a financial year."
+        },
+        {
+          "name": "Aadhaar card",
+          "tooltip": ""
+        },
+        {
+          "name": "Salary slips",
+          "tooltip": "You may need your salary slips, as ITR 2 form released by the income tax department, asks individuals to specify the nature of salary income such as basic, dearness allowance, house rent allowance and so on. "
+        }
+      ],
+      "Amount": 1500,
+      "isGST": false,
+      "hasSections": false
+    },
+    "GSTRegistration": {
+      "title": "GST Registration",
+      "description": "An income tax (IT) return is a tax form to be filled with details of your income and taxes, and submitted electronically to the Income-tax Department.Income tax return forms range from ITR 1 to ITR 7, used for different types of income and different types of entities. Depending on the type of forms, there are various disclosure requirements. You need not worry about your category as Online Tax Filings handles it for you automatically.The tax returns must be filed every year and must be filed by a specific date. If the return shows excess tax has been paid during a given year, you are eligible for ‘income tax refund’, subject to the department’s interpretations and calculations.",
+      "DocumentsRequired": [
+        {
+          "name": "Sales and Purchases Data",
+          "tooltip": "Form-16 is a TDS certificate issued to you by your employer to provide details of the salary paid to you and TDS deducted on it, if any. It is mandatory for your employer to issue Form-16 if your employer has deducted TDS from your salary. If no TDS is deducted from your salary, then you can request your employer to provide you the same."
+        },
+        {
+          "name": "PAN Card ",
+          "tooltip": "Form-16 is a Proof of Identity."
+        },
+        {
+          "name": "Tax-saving investment proofs",
+          "tooltip": "All the tax-saving investments made by you and the expenditures incurred by you eligible for deduction under section 80C, 80CCC and 80CCD(1) during FY2019-20 can help you lower your tax liability. The maximum tax-break you can claim under these three sections combined cannot exceed Rs 1.5 lakh in a financial year."
+        },
+        {
+          "name": "Aadhaar card",
+          "tooltip": ""
+        },
+        {
+          "name": "Salary slips",
+          "tooltip": "You may need your salary slips, as ITR 2 form released by the income tax department, asks individuals to specify the nature of salary income such as basic, dearness allowance, house rent allowance and so on. "
+        }
+      ],
+      "Amount": 1500,
+      "isGST": false,
+      "hasSections": false
+    },
+    "GSTFiling": {
+      "title": "GST Filing",
+      "description": "An income tax (IT) return is a tax form to be filled with details of your income and taxes, and submitted electronically to the Income-tax Department.Income tax return forms range from ITR 1 to ITR 7, used for different types of income and different types of entities. Depending on the type of forms, there are various disclosure requirements. You need not worry about your category as Online Tax Filings handles it for you automatically.The tax returns must be filed every year and must be filed by a specific date. If the return shows excess tax has been paid during a given year, you are eligible for ‘income tax refund’, subject to the department’s interpretations and calculations.",
+      "DocumentsRequired": [
+        {
+          "name": "Sales and Purchases Data",
+          "tooltip": "Form-16 is a TDS certificate issued to you by your employer to provide details of the salary paid to you and TDS deducted on it, if any. It is mandatory for your employer to issue Form-16 if your employer has deducted TDS from your salary. If no TDS is deducted from your salary, then you can request your employer to provide you the same."
+        },
+        {
+          "name": "PAN Card ",
+          "tooltip": "Form-16 is a Proof of Identity."
+        },
+        {
+          "name": "Tax-saving investment proofs",
+          "tooltip": "All the tax-saving investments made by you and the expenditures incurred by you eligible for deduction under section 80C, 80CCC and 80CCD(1) during FY2019-20 can help you lower your tax liability. The maximum tax-break you can claim under these three sections combined cannot exceed Rs 1.5 lakh in a financial year."
+        },
+        {
+          "name": "Aadhaar card",
+          "tooltip": ""
+        },
+        {
+          "name": "Salary slips",
+          "tooltip": "You may need your salary slips, as ITR 2 form released by the income tax department, asks individuals to specify the nature of salary income such as basic, dearness allowance, house rent allowance and so on. "
+        }
+      ],
+      "Amount": 1500,
+      "isGST": false,
+      "hasSections": false
+    },
+    "GSTAnnualReturn": {
+      "title": "GST Annual Return",
+      "description": "An income tax (IT) return is a tax form to be filled with details of your income and taxes, and submitted electronically to the Income-tax Department.Income tax return forms range from ITR 1 to ITR 7, used for different types of income and different types of entities. Depending on the type of forms, there are various disclosure requirements. You need not worry about your category as Online Tax Filings handles it for you automatically.The tax returns must be filed every year and must be filed by a specific date. If the return shows excess tax has been paid during a given year, you are eligible for ‘income tax refund’, subject to the department’s interpretations and calculations.",
+      "DocumentsRequired": [
+        {
+          "name": "Sales and Purchases Data",
+          "tooltip": "Form-16 is a TDS certificate issued to you by your employer to provide details of the salary paid to you and TDS deducted on it, if any. It is mandatory for your employer to issue Form-16 if your employer has deducted TDS from your salary. If no TDS is deducted from your salary, then you can request your employer to provide you the same."
+        },
+        {
+          "name": "PAN Card ",
+          "tooltip": "Form-16 is a Proof of Identity."
+        },
+        {
+          "name": "Tax-saving investment proofs",
+          "tooltip": "All the tax-saving investments made by you and the expenditures incurred by you eligible for deduction under section 80C, 80CCC and 80CCD(1) during FY2019-20 can help you lower your tax liability. The maximum tax-break you can claim under these three sections combined cannot exceed Rs 1.5 lakh in a financial year."
+        },
+        {
+          "name": "Aadhaar card",
+          "tooltip": ""
+        },
+        {
+          "name": "Salary slips",
+          "tooltip": "You may need your salary slips, as ITR 2 form released by the income tax department, asks individuals to specify the nature of salary income such as basic, dearness allowance, house rent allowance and so on. "
+        }
+      ],
+      "Amount": 1500,
+      "isGST": false,
+      "hasSections": false
+    },
+    "proprietorShip": {
+      "title": "ProprietorShip",
+      "description": "A sole proprietorship is the most common form of business organization in India. It does not involve many of the complex filing requirements associated with other types of business structures such as corporations. Sole proprietorships allow persons to report business income and expenses on their tax returns.  ",
+      "DocumentsRequired": [
+        {
+          "name": "Address and identity proof",
+          "tooltip": ""
+        },
+        {
+          "name": "PAN card, KYC documents",
+          "tooltip": "Form-16 is a Proof of Identity."
+        },
+        {
+          "name": "Rental agreement or sale deed (in case of Shops & Establishment Act Registration).",
+          "tooltip": ""
+        }
+      ],
+      "Amount": 1500,
+      "isGST": false,
+      "hasSections": false
+    },
+    "partnerShip": {
+      "title": "PartnerShip Firm",
+      "description": "A partnership is easy to form since no complex business formalities are required to be performed. Partnership registration is not mandatory and is at the option of the partners whether they want to register the documents or not.",
+      "DocumentsRequired": [
+        {
+          "name": "Address and identity proof",
+          "tooltip": ""
+        },
+        {
+          "name": "Aadhar card/ voter’s ID/ passport/ driving license",
+          "tooltip": "Form-16 is a Proof of Identity."
+        },
+        {
+          "name": "Latest bank statement/ telephone bill/ mobile bill/ electricity bill/ gas bill",
+          "tooltip": ""
+        },
+        {
+          "name": "Passport-size photograph",
+          "tooltip": "Form-16 is a Proof of Identity."
+        },
+        {
+          "name": "Blank document with specimen signature.",
+          "tooltip": ""
+        }
+      ],
+      "Amount": 1500,
+      "isGST": false,
+      "hasSections": false
+    },
+    "AssociationOfWorkers": {
+      "title": "Business",
+      "description": "An income tax (IT) return is a tax form to be filled with details of your income and taxes, and submitted electronically to the Income-tax Department.Income tax return forms range from ITR 1 to ITR 7, used for different types of income and different types of entities. Depending on the type of forms, there are various disclosure requirements. You need not worry about your category as Online Tax Filings handles it for you automatically.The tax returns must be filed every year and must be filed by a specific date. If the return shows excess tax has been paid during a given year, you are eligible for ‘income tax refund’, subject to the department’s interpretations and calculations.",
+      "DocumentsRequired": [
+        {
+          "name": "Sales and Purchases Data",
+          "tooltip": "Form-16 is a TDS certificate issued to you by your employer to provide details of the salary paid to you and TDS deducted on it, if any. It is mandatory for your employer to issue Form-16 if your employer has deducted TDS from your salary. If no TDS is deducted from your salary, then you can request your employer to provide you the same."
+        },
+        {
+          "name": "PAN Card ",
+          "tooltip": "Form-16 is a Proof of Identity."
+        },
+        {
+          "name": "Tax-saving investment proofs",
+          "tooltip": "All the tax-saving investments made by you and the expenditures incurred by you eligible for deduction under section 80C, 80CCC and 80CCD(1) during FY2019-20 can help you lower your tax liability. The maximum tax-break you can claim under these three sections combined cannot exceed Rs 1.5 lakh in a financial year."
+        },
+        {
+          "name": "Aadhaar card",
+          "tooltip": ""
+        },
+        {
+          "name": "Salary slips",
+          "tooltip": "You may need your salary slips, as ITR 2 form released by the income tax department, asks individuals to specify the nature of salary income such as basic, dearness allowance, house rent allowance and so on. "
+        }
+      ],
+      "Amount": 1500,
+      "isGST": false,
+      "hasSections": false
+    },
+    "OnePersonCompany": {
+      "title": "One Person Company",
+      "description": "It is governed by the Companies Act, 2013 under the Ministry of Corporate Affairs. OPC Consisting of only one member who is also the director of the company. It is a form of a company where the compliance requirements are lesser than that of a private company.",
+      "DocumentsRequired": [
+        {
+          "name": "Passport or PAN card",
+          "tooltip": ""
+        },
+        {
+          "name": "Passport size photo",
+          "tooltip": ""
+        },
+        {
+          "name": "Specimen signature",
+          "tooltip": ""
+        },
+        {
+          "name": "No objection certificate",
+          "tooltip": ""
+        },
+        {
+          "name": "Rental agreement",
+          "tooltip": ""
+        },
+        {
+          "name": "Address proof of directors",
+          "tooltip": ""
+        },
+        {
+          "name": "Identity proof of directors For NRIs and foreign nationals, a passport",
+          "tooltip": ""
+        },
+        {
+          "name": "Voter id",
+          "tooltip": ""
+        },
+        {
+          "name": "Drivers license",
+          "tooltip": ""
+        },
+        {
+          "name": "Updated gas or electricity bills",
+          "tooltip": ""
+        },
+        {
+          "name": "Bank account statements, and phone bills for mobile or landlines",
+          "tooltip": ""
+        },
+        {
+          "name": "A sample signature.",
+          "tooltip": ""
+        }
+      ],
+      "Amount": 1500,
+      "isGST": false,
+      "hasSections": false
+    },
+    "LimitedLiabilityPartnership": {
+      "title": "Limited Liability Partnership",
+      "description": "LLP is an alternative corporate business form that gives the benefits of limited liability of a company and the flexibility of a partnership. Whether you notice them or not, limited liability partnerships are quite common.",
+      "DocumentsRequired": [
+        {
+          "name": "Address and identity proof",
+          "tooltip": ""
+        },
+        {
+          "name": "Aadhar card/ voter’s ID/ passport/ driving license",
+          "tooltip": "Form-16 is a Proof of Identity."
+        },
+        {
+          "name": "Latest bank statement/ telephone bill/ mobile bill/ electricity bill/ gas bill",
+          "tooltip": ""
+        },
+        {
+          "name": "Passport-size photograph",
+          "tooltip": "Form-16 is a Proof of Identity."
+        },
+        {
+          "name": "Blank document with specimen signature.",
+          "tooltip": ""
+        }
+      ],
+      "Amount": 1500,
+      "isGST": false,
+      "hasSections": false
+    },
+    "privateLimitedCompany": {
+      "title": "private Limited Company",
+      "description": "A Private Limited Company is a corporate entity promoted by 2 or more people, they are called members or shareholders of a company. Private Limited company is run by the Directors for the benefit of shareholders complying with the requirements and regulatory guidelines of the Ministry of Corporate Affairs.",
+      "DocumentsRequired": [
+        {
+          "name": "Scanned copy of PAN card or passport (foreign nationals & NRIs)",
+          "tooltip": ""
+        },
+        {
+          "name": "Scanned copy of voter ID/passport/driving licence",
+          "tooltip": "Form-16 is a Proof of Identity."
+        },
+        {
+          "name": "Scanned copy of the latest bank statement/telephone or mobile bill/electricity or gas bill",
+          "tooltip": ""
+        },
+        {
+          "name": "Scanned passport-sized photograph specimen signature (blank document with signature [directors only])",
+          "tooltip": ""
+        },
+        {
+          "name": "Scanned copy of notarized rental agreement in English",
+          "tooltip": ""
+        },
+        {
+          "name": "Scanned copy of no-objection certificate from the property owner",
+          "tooltip": ""
+        },
+        {
+          "name": "Scanned copy of sale deed/property deed in English (in case of owned property)",
+          "tooltip": ""
+        }
+      ],
+      "Amount": 1500,
+      "isGST": false,
+      "hasSections": false
+    },
+    "Section8Company": {
+      "title": "Section8 Company(NGO)",
+      "description": "A Section 8 company under the Companies Act, 2013 or a Section 25 Company as per the Companies Act,1956 is an organization registered with an objective of promoting the fine arts, science, literature, or knowledge sharing for a purposeful matter or for charity. These are the limited companies established under the Companies Act. The Government grants these companies an exclusive license under Section 8 Companies Act.",
+      "DocumentsRequired": [
+        {
+          "name": "DSC and DIN of the Directors. ",
+          "tooltip": ""
+        },
+        {
+          "name": "Objectives and proposed work of the company.",
+          "tooltip": ""
+        },
+        {
+          "name": "Financial statements like assets and liabilities, the projection for five years etc.",
+          "tooltip": ""
+        },
+        {
+          "name": "Directors personal documents.",
+          "tooltip": ""
+        },
+        {
+          "name": "Registered office address documents viz. rental agreement or sale deed in the name of the company, utility bills not older than two months.",
+          "tooltip": ""
+        }
+      ],
+      "Amount": 1500,
+      "isGST": false,
+      "hasSections": false
+    },
+    "MSMERegistration": {
+      "title": "MSME Registration",
+      "description": "Amendment refers to alteration or addition to any contract, agreement, laws, and regulations. An amendment can also be made by way of an addendum or modification are made to some of the terms of an agreement or contract. In case there are substantial changes, the existing agreement or contract may need to be substituted with a new one.",
+      "DocumentsRequired": [
+        {
+          "name": "Aadhaar Card & PAN Card",
+          "tooltip": ""     
+        },
+        {
+          "name": "Name of the company",
+          "tooltip": ""     
+        },
+        {
+          "name": "Office Address",
+          "tooltip": ""     
+        },
+        {
+          "name": "Total Investment",
+          "tooltip": ""     
+        },
+        {
+          "name": "No of person working",
+          "tooltip": ""     
+        },
+        {
+          "name": "Nature of Manufacturing/Service activities",
+          "tooltip": ""     
+        },
+        {
+          "name": "Bank Account Number and IFSC",
+          "tooltip": ""     
+        }
+      ],
+      "Amount": 2000,
+      "isGST": false,
+      "hasSections": false
+    },
+    "IECRegistration": {
+      "title": "IEC Registration",
+      "description": "Import Export Code (also known as IEC) is a 10 digit identification number that is issued by the Department of Commerce",
+      "DocumentsRequired": [
+        {
+          "name": "Self-attested PAN Card of all directors/partners/proprietor",
+          "tooltip": ""
+        },
+        {
+          "name": "Residential Address Proof of all directors/partners/proprietor",
+          "tooltip": "Form-16 is a Proof of Identity."
+        },
+        {
+          "name": "Entity Pan Card (if any)",
+          "tooltip": ""
+        },
+        {
+          "name": "Canceled Cheque Or Banker Certificate for IEC",
+          "tooltip": ""
+        }
+      ],
+      "Amount": 2000,
+      "isGST": false,
+      "hasSections": false
+    },
+    "digitalSignature": {
+      "title": "Digital Signature",
+      "description": "A Digital Signature Certificate (DSC) is a secure digital key that certifies the identity of the holder, issued by a Certifying Authority (CA). It typically contains your identity (name, email, country, APNIC account name and your public key). Digital Certificates use Public Key Infrastructure meaning data that has been digitally signed or encrypted by a private key can only be decrypted by its corresponding public key. A Digital Signature is the equivalent of a physical signature in electronic format, as it establishes the identity of the sender of an electronic document on the Internet. It comes in the form of a USB E-Token, wherein the Digital Signature Certificate is stored and can be accessed through a computer to sign documents electronically.",
+      "DocumentsRequired": [],
+      "Amount": 2000,
+      "isGST": false,
+      "hasSections": false
+    },
+    "PANCard": {
+      "title": "PAN Card",
+      "description": "The Permanent Account Number (PAN) card, issued by the Income-tax Department, is one of the most important documents nowadays. The card was issued in order to prevent tax evasion by individuals and entities as it links all financial transactions made by a particular individual or entity.",
+      "DocumentsRequired": [
+        {
+          "name": "Photos (2nos)",
+          "tooltip": ""
+        },
+        {
+          "name": "Aadhaar card (Mandatory)",
+          "tooltip": ""
+        },
+        {
+          "name": "DL, Passport or Voter id ( incase change in Applicant Name, Father name, Date of birth , etc Supporting documents are mandatory) (If Changes/correction/ Lost/ Damaged)" ,
+          "tooltip":""
+        }
+      ],
+      "Amount": 2000,
+      "isGST": false,
+      "hasSections": false
     }
+  }
 }

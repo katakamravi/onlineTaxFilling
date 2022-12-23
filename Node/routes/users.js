@@ -4,6 +4,8 @@ var Razorpay = require('razorpay');
 var nodemailer = require('nodemailer');
 const { google } = require("googleapis");
 const OAuth2 = google.auth.OAuth2;
+var smtpTransport = require('nodemailer-smtp-transport');
+
 
 
 
@@ -34,30 +36,48 @@ router.post('/orderid', function (req, res, next) {
 
 
 router.post('/email', function (req, res, next) {
-const oauth2Client = new OAuth2(
-    "172708659579-biku41tgjdifian2qn0eh7oki5mhb7ei.apps.googleusercontent.com", // ClientID
-    "D3OXfJ1K_ViHkvwO_F7PAi7e", // Client Secret
-    "https://developers.google.com/oauthplayground" // Redirect URL
-);
-oauth2Client.setCredentials({
-    refresh_token: "1//04jt5I457D8jyCgYIARAAGAQSNwF-L9IrJsvwUIanxgvL5RKNeQ75S_vhKn-bvQRFUJg9tm6SQl7-VfebKG_hqUg15n3E68djc-E"
-});
-const accessToken = oauth2Client.getAccessToken();
+// const oauth2Client = new OAuth2(
+//     "172708659579-biku41tgjdifian2qn0eh7oki5mhb7ei.apps.googleusercontent.com", // ClientID
+//     "D3OXfJ1K_ViHkvwO_F7PAi7e", // Client Secret
+//     "https://developers.google.com/oauthplayground" // Redirect URL
+// );
+// oauth2Client.setCredentials({
+//     refresh_token: "1//04jt5I457D8jyCgYIARAAGAQSNwF-L9IrJsvwUIanxgvL5RKNeQ75S_vhKn-bvQRFUJg9tm6SQl7-VfebKG_hqUg15n3E68djc-E"
+// });
+// const accessToken = oauth2Client.getAccessToken();
+var smtptransport = nodemailer.createTransport(smtpTransport({
+  service: 'gmail',
+  host: 'smtp.gmail.com',
+  auth: {
+    user: 'katakamravishankar@gmail.com', // generated ethereal user
+    pass: '9848640520', // generated ethereal password
+  },
+}));
 
-const smtpTransport = nodemailer.createTransport({
-    service: "gmail",
-    auth: {
-         type: "OAuth2",
-         user: "katakamravishankar@gmail.com", 
-         clientId: "172708659579-biku41tgjdifian2qn0eh7oki5mhb7ei.apps.googleusercontent.com",
-         clientSecret: "D3OXfJ1K_ViHkvwO_F7PAi7e",
-         refreshToken: "1//04jt5I457D8jyCgYIARAAGAQSNwF-L9IrJsvwUIanxgvL5RKNeQ75S_vhKn-bvQRFUJg9tm6SQl7-VfebKG_hqUg15n3E68djc-E",
-         accessToken: accessToken
-    }
-});
+
+// let smtpTransport = nodemailer.createTransport({
+//   host: "smtp.ethereal.email",
+//   port: 587,
+//   secure: false, // true for 465, false for other ports
+//   auth: {
+//     user: 'katakamravishankar@gmail.com', // generated ethereal user
+//     pass: '9848640520', // generated ethereal password
+//   },
+// });
+// const smtpTransport = nodemailer.createTransport({
+//     service: "gmail",
+//     auth: {
+//          type: "OAuth2",
+//          user: "katakamravishankar@gmail.com", 
+//          clientId: "172708659579-biku41tgjdifian2qn0eh7oki5mhb7ei.apps.googleusercontent.com",
+//          clientSecret: "D3OXfJ1K_ViHkvwO_F7PAi7e",
+//          refreshToken: "1//04jt5I457D8jyCgYIARAAGAQSNwF-L9IrJsvwUIanxgvL5RKNeQ75S_vhKn-bvQRFUJg9tm6SQl7-VfebKG_hqUg15n3E68djc-E",
+//          accessToken: accessToken
+//     }
+// });
 
 const mailOptions = {
-    from: "srinivasguptha.k@gmail.com",
+    from: "katakamravishankar@gmail.com",
     to: `${req.body.userEmail}`,
     subject: "Testing Mail",
     generateTextFromHTML: true,
@@ -65,13 +85,12 @@ const mailOptions = {
     <h2> name:${req.body.userName} </h2><br>
     <h2> email:${req.body.userEmail} </h2><br>
     <h2> phonenumber:${req.body.userMobile} </h2><br>`
-    //text: 'Ingaa Paar Out Put Deko Pola AdiriPola....',
 };
 
-smtpTransport.sendMail(mailOptions, (error, response) => {
-    if(error) next(err);
+smtptransport.sendMail(mailOptions, (error, response) => {
+    if(error) next(error);
     res.json({"success": true, Data: response})
-    smtpTransport.close();
+    smtptransport.close();
 });
 });
 

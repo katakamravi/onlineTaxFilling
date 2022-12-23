@@ -1,89 +1,10 @@
 <div class="page-wrapper">
     <!-- Banner Section -->
-    <div class="banner-section">
-        <div class="main-slider-carousel owl-carousel owl-theme owl-loaded owl-drag">
 
-            <div class="slide">
-                <div class="auto-container w-100">
-                    <div class="row clearfix">
-
-                        <!-- Content Column -->
-                        <div class="content-column col-lg-7 col-md-12 col-sm-12">
-                            <div class="inner-column">
-                                <div class="title">Income Tax filing</div>
-                                <h1>Get your Income-tax return filed by our <span>tax experts</span></h1>
-                                <div class="text"><b>Data Security and confidentiality is our priority</b><br> Get
-                                    your
-                                    personal tax expert to do tax filing for you. And it is personal, convenient &
-                                    fast with maximum refund calculated for you. Let we handle Your total Tax &
-                                    Business Compliance.</div>
-                                <div class="btn-box">
-                                    <a href="about.html" class="theme-btn btn-style-one"><span class="txt">Work With
-                                            Us</span></a>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="slide" data-bg-image="../../../assets/images/main-slider/banner2.jpg">
-                <div class="auto-container w-100">
-                    <div class="row clearfix">
-
-                        <!-- Content Column -->
-                        <div class="content-column col-lg-7 col-md-12 col-sm-12">
-                            <div class="inner-column">
-                                <div class="title">GST Return filing</div>
-                                <h1>Get all your GST compliances return filed by our <span>tax experts</span></h1>
-                                <div class="text"><b>Data Security and confidentiality is our priority</b><br>GST
-                                    Filing Service Plans, Best & Lowest Pricing depends on the type of business like
-                                    regular, composition, and the number of computerized transactions in your
-                                    business per month. We provide expert assisted GST filing plans & pricing are
-                                    affordable & customizable per SME businesses</div>
-                                <div class="btn-box">
-                                    <a href="about.html" class="theme-btn btn-style-one"><span class="txt">Work With
-                                            Us</span></a>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="slide" data-bg-image="../../../assets/images/main-slider/banner3.jpg">
-                <div class="auto-container w-100">
-                    <div class="row clearfix">
-
-                        <!-- Content Column -->
-                        <div class="content-column col-lg-7 col-md-12 col-sm-12">
-                            <div class="inner-column">
-                                <div class="title">GST Registration</div>
-                                <h1>Start your dream by obtaining Business <span>GST registration</span></h1>
-                                <div class="text"><b>GST registration</b>We provide the New GST Registration by
-                                    Online Document Uploading & Tracking. File your GST Application in 24 hours and
-                                    Get Your TRN on same day. GST Registration and Follow-up is also provided.</div>
-                                <div class="btn-box">
-                                    <a href="about.html" class="theme-btn btn-style-one"><span class="txt">Work With
-                                            Us</span></a>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
     <!-- End Banner Section -->
 
     <!-- CTA Section Start -->
-    <div class="cta-section" data-bg-image="../../../assets/images/background/cta-bg.jpg">
+    <div class="cta-section" data-bg-image="../../../assets/images/gallery/2.jpg">
         <div class="auto-container">
             <div class="row align-items-center">
                 <div class="col-lg-7">
@@ -164,9 +85,9 @@
                             <div class="icon-box">
                                 <span class="icon ti-blackboard"></span>
                             </div>
-                            <h5><a href="service-detail.html">Income tax return filing</a></h5>
+                            <h5><a (click)="onUpdateServices('IncomeTaxFiling')">Income tax return filing</a></h5>
                             <!-- <div class="text">Thought leadership pass the clap hackathon wearables.</div> -->
-                            <a class="read-more" href="service-detail.html">More <span
+                            <a class="read-more" (click)="onUpdateServices('IncomeTaxFiling')">More <span
                                     class="ti-angle-right"></span></a>
                         </div>
                     </div>
@@ -177,9 +98,9 @@
                             <div class="icon-box">
                                 <span class="icon ti-stats-up"></span>
                             </div>
-                            <h5><a href="service-detail.html">GST return filing</a></h5>
+                            <h5><a (click)="onUpdateServices('GSTServices')">GST return filing</a></h5>
                             <!-- <div class="text">Platform omnichannel click thought leadership pivot</div> -->
-                            <a class="read-more" href="service-detail.html">More <span
+                            <a class="read-more" (click)="onUpdateServices('GSTServices')">More <span
                                     class="ti-angle-right"></span></a>
                         </div>
                     </div>
@@ -190,9 +111,9 @@
                             <div class="icon-box">
                                 <span class="icon ti-shield"></span>
                             </div>
-                            <h5><a href="service-detail.html">GST Annual Return</a></h5>
+                            <h5><a (click)="onUpdateServices('GSTAnnualReturn')">GST Annual Return</a></h5>
                             <!-- <div class="text">Disrupt taste makers help council emerging.</div> -->
-                            <a class="read-more" href="service-detail.html">More <span
+                            <a class="read-more" (click)="onUpdateServices('GSTAnnualReturn')">More <span
                                     class="ti-angle-right"></span></a>
                         </div>
                     </div>
@@ -203,9 +124,9 @@
                             <div class="icon-box">
                                 <span class="icon ti-home"></span>
                             </div>
-                            <h5><a href="service-detail.html">TDS return filing</a></h5>
+                            <h5><a (click)="onUpdateServices('')">TDS return filing</a></h5>
                             <!-- <div class="text">Mobile ready proprietary dedication intuitive</div> -->
-                            <a class="read-more" href="service-detail.html">More <span
+                            <a class="read-more" (click)="onUpdateServices('')">More <span
                                     class="ti-angle-right"></span></a>
                         </div>
                     </div>
@@ -216,9 +137,9 @@
                             <div class="icon-box">
                                 <span class="icon ti-stamp"></span>
                             </div>
-                            <h5><a href="service-detail.html">GST registration</a></h5>
+                            <h5><a (click)="onUpdateServices('GSTRegistration')">GST registration</a></h5>
                             <!-- <div class="text">Thought leadership pass the clap hackathon wearables.</div> -->
-                            <a class="read-more" href="service-detail.html">More <span
+                            <a class="read-more" (click)="onUpdateServices('GSTRegistration')">More <span
                                     class="ti-angle-right"></span></a>
                         </div>
                     </div>
@@ -229,9 +150,9 @@
                             <div class="icon-box">
                                 <span class="icon ti-money"></span>
                             </div>
-                            <h5><a href="service-detail.html">Payroll laws registration</a></h5>
+                            <h5><a (click)="onUpdateServices('')">Payroll laws registration</a></h5>
                             <!-- <div class="text">Disrupt taste makers help council emerging.</div> -->
-                            <a class="read-more" href="service-detail.html">More <span
+                            <a class="read-more" (click)="onUpdateServices('')">More <span
                                     class="ti-angle-right"></span></a>
                         </div>
                     </div>
@@ -242,9 +163,9 @@
                             <div class="icon-box">
                                 <span class="icon ti-shopping-cart-full"></span>
                             </div>
-                            <h5><a href="service-detail.html">Labour law registrations</a></h5>
+                            <h5><a (click)="onUpdateServices('')">Labour law registrations</a></h5>
                             <!-- <div class="text">Mobile ready proprietary dedication intuitive</div> -->
-                            <a class="read-more" href="service-detail.html">More <span
+                            <a class="read-more" (click)="onUpdateServices('')">More <span
                                     class="ti-angle-right"></span></a>
                         </div>
                     </div>
@@ -255,9 +176,9 @@
                             <div class="icon-box">
                                 <span class="icon ti-truck"></span>
                             </div>
-                            <h5><a href="service-detail.html">Other registrations</a></h5>
+                            <h5><a (click)="onUpdateServices('')">Other Services</a></h5>
                             <!-- <div class="text">Platform omnichannel click thought leadership pivot</div> -->
-                            <a class="read-more" href="service-detail.html">More <span
+                            <a class="read-more" (click)="onUpdateServices('')">More <span
                                     class="ti-angle-right"></span></a>
                         </div>
                     </div>
@@ -440,7 +361,7 @@
                 <div class="form-column col-lg-5 col-md-12 col-sm-12">
                     <div class="inner-column">
                         <div class="form-boxed">
-                            <h5>Need consultation</h5>
+                            <h5>Free consultation</h5>
 
                             <div class="consult-form">
                                 <form method="post"
@@ -449,7 +370,7 @@
                                     <!--Form Group-->
                                     <div class="form-group">
                                         <label>full name</label>
-                                        <input type="text" name="name" value="" placeholder="Jason Staham" required>
+                                        <input type="text" name="name" value="" placeholder="Enter your name" required>
                                     </div>
                                     <!--Form Group-->
                                     <div class="form-group">
@@ -475,7 +396,7 @@
                                     </div>
                                     <div class="form-group">
                                         <button class="theme-btn btn-style-one" type="submit"
-                                            name="submit-form"><span class="txt">send your messenger</span></button>
+                                            name="submit-form"><span class="txt">SUBMIT</span></button>
                                     </div>
                                 </form>
 

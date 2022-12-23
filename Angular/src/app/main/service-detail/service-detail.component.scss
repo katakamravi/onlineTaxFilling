@@ -1,0 +1,25 @@
+
+.listmenuli {
+    li {
+        background: #f7f7f7;
+        border-radius: 3px;
+        margin: 4px;
+        transition: .2s ease-in-out;
+        a {
+            font-size: 16px;
+            padding: 19px;
+            display: block;
+            font-weight: 700;
+            text-decoration: none;
+            color: #000;
+        }
+    }
+    .active-li {
+        border-left: 5px solid #ffd000;
+        box-shadow: 0 0 7px 0 #a39393;
+        background: #fff;
+    }
+}
+.padding-top {
+    padding-top: 170px;
+}
