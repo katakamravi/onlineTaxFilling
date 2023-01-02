@@ -1,0 +1,9 @@
+.contact-banner-section{
+	position:relative;
+	padding-top:170px;
+	overflow:hidden;
+	background-color: #fff;
+    @media (max-width: 991px) {
+        padding-top: 0;
+    }
+}

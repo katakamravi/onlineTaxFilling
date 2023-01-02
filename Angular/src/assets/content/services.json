@@ -352,7 +352,7 @@
           "isGST": false
         },
         {
-          "title": "GST FIling",
+          "title": "GST Filing",
           "description": "An income tax (IT) return is a tax form to be filled with details of your income and taxes, and submitted electronically to the Income-tax Department.Income tax return forms range from ITR 1 to ITR 7, used for different types of income and different types of entities. Depending on the type of forms, there are various disclosure requirements. You need not worry about your category as Online Tax Filings handles it for you automatically.The tax returns must be filed every year and must be filed by a specific date. If the return shows excess tax has been paid during a given year, you are eligible for ‘income tax refund’, subject to the department’s interpretations and calculations.",
           "DocumentsRequired": [
             {

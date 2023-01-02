@@ -5,9 +5,8 @@
 		<div class="bg-card">
 		<div class="container row">
 			<div class="card_text">
-			<h2>One Person Company</h2>
-			<p>It is governed by the Companies Act, 2013 under the Ministry of Corporate Affairs. OPC Consisting of only one member who is also the director of the company. It is a form of a company where the compliance requirements are lesser than that of a private company.
-			</p>
+			<h2>{{services?.title}}</h2>
+			<p>{{services?.description}}</p>
 		</div>
 			  <div class="col-md-4 mt-5 mb-5 pt-5" *ngFor="let sections of services?.sections || []">
 				  <div class="text-center bg-white product-card-design">
@@ -17,7 +16,7 @@
 						<p>{{sections.description}}</p>
 					</div>
 					<div class="card-button">
-						<a href="#">See More</a>
+						<a href="javascript:void(0)" (click)="onUpdateServices(sections.title)">See More</a>
 						</div>
 				  </div>
 			  </div>

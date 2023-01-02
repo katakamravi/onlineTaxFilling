@@ -91,8 +91,8 @@ submitUser(): void {
 
 
 onUpdateServices(data: any) {
-  this._router.navigate(['services'], { queryParams: { page: data } });
-  this._dataHandlerService.UpdateServicesData(data);
+  this._router.navigate(['services'], { queryParams: { page: data.replace(/\s/g,'') } });
+  this._dataHandlerService.UpdateServicesData(data.replace(/\s/g,''));
   }
 
 }

@@ -11,12 +11,17 @@ export class HeaderComponent implements OnInit {
 
   constructor(private _dataHandlerService: DataHandlerService, private router: Router) { }
 
+
   ngOnInit(): void {
   }
 
   onUpdateServices(data: any) {
   this.router.navigate(['services'], { queryParams: { page: data } });
   this._dataHandlerService.UpdateServicesData(data);
+  }
+
+  onRouterNavigate(data?: any) {
+    this.router.navigate([data]);
   }
   
 }

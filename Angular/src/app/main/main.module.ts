@@ -13,9 +13,12 @@ import { NewHomeComponent } from './new-home/new-home.component';
 import { NewServicesComponent } from './new-services/new-services.component';
 import { ServiceDetailComponent } from './service-detail/service-detail.component';
 import { DetailsComponent } from './details/details.component';
+import { ContactComponent } from './contact/contact.component';
+import { AboutComponent } from './about/about.component';
+import { TermsConditionsComponent } from './terms-conditions/terms-conditions.component';
 
 @NgModule({
-  declarations: [HomeComponent, ServicesComponent, TermsandcondComponent, PrivacypolicyComponent, AboutusComponent, NewHomeComponent, NewServicesComponent, ServiceDetailComponent, DetailsComponent],
+  declarations: [HomeComponent, ServicesComponent, TermsandcondComponent, PrivacypolicyComponent, AboutusComponent, NewHomeComponent, NewServicesComponent, ServiceDetailComponent, DetailsComponent, ContactComponent, AboutComponent, TermsConditionsComponent],
   imports: [
     IvyCarouselModule,
     RouterModule.forChild([
