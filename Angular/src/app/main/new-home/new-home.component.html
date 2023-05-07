@@ -2,7 +2,7 @@
     <div class="banner-section">
         <div>
             <div class="image">
-                <img src="../../../assets/images/main-slider/banner1.jpg" alt="" />
+                <!-- <img src="../../../assets/images/main-slider/banner1.jpg" alt="" /> -->
                 <!-- <div class="content-column col-lg-7 col-md-12 col-sm-12">
                     <div class="inner-column">
                         <div class="title">Income Tax filing</div>
@@ -292,9 +292,9 @@
                                         <img src="../../../assets/images/gallery/2.jpg" alt="" />
                                         <div class="overlay-box">
                                             <div class="overlay-inner">
-                                                <h3><a href="project-details.html">Sole Proprietor</a></h3>
+                                                <h3><a href="javascript:void(0)" (click)="onUpdateServices('proprietorShip')">Sole Proprietor</a></h3>
                                                 <div class="designation">Finance, Consulting</div>
-                                                <a href="project-details.html" class="arrow ti-angle-right"></a>
+                                                <a href="javascript:void(0)" (click)="onUpdateServices('proprietorShip')" class="arrow ti-angle-right"></a>
                                             </div>
                                         </div>
                                     </div>
@@ -310,9 +310,9 @@
                                         <img src="../../../assets/images/gallery/3.jpg" alt="" />
                                         <div class="overlay-box">
                                             <div class="overlay-inner">
-                                                <h3><a href="project-details.html">Partnership firm</a></h3>
+                                                <h3><a href="javascript:void(0)" (click)="onUpdateServices('partnerShip')">Partnership firm</a></h3>
                                                 <div class="designation">Finance, Consulting</div>
-                                                <a href="project-details.html" class="arrow ti-angle-right"></a>
+                                                <a href="javascript:void(0)" (click)="onUpdateServices('partnerShip')" class="arrow ti-angle-right"></a>
                                             </div>
                                         </div>
                                     </div>
@@ -328,9 +328,13 @@
                                         <img src="../../../assets/images/gallery/4.jpg" alt="" />
                                         <div class="overlay-box">
                                             <div class="overlay-inner">
-                                                <h3><a href="project-details.html">Limited Liability Partnership</a></h3>
+                                                <h3><a href="javascript:void(0)"  (click)="
+                                                    onUpdateServices('LimitedLiabilityPartnership')
+                                                  ">Limited Liability Partnership</a></h3>
                                                 <div class="designation">Finance, Consulting</div>
-                                                <a href="project-details.html" class="arrow ti-angle-right"></a>
+                                                <a href="javascript:void(0)"  (click)="
+                                                onUpdateServices('LimitedLiabilityPartnership')
+                                              " class="arrow ti-angle-right"></a>
                                             </div>
                                         </div>
                                     </div>
@@ -349,9 +353,9 @@
                                 <img src="../../../assets/images/gallery/1.jpg" alt="" />
                                 <div class="overlay-box">
                                     <div class="overlay-inner">
-                                        <h3><a href="project-details.html">Private limited company</a></h3>
+                                        <h3><a href="javascript:void(0)" (click)="onUpdateServices('privateLimitedCompany')">Private limited company</a></h3>
                                         <div class="designation">Finance, Consulting</div>
-                                        <a href="project-details.html" class="arrow ti-angle-right"></a>
+                                        <a href="javascript:void(0)" (click)="onUpdateServices('privateLimitedCompany')" class="arrow ti-angle-right"></a>
                                     </div>
                                 </div>
                             </div>
@@ -432,19 +436,18 @@
                             <h5>Free consultation</h5>
 
                             <div class="consult-form">
-                                <form method="post"
-                                    action="https://htmldemo.hasthemes.com/consultix/consultix/donate.html">
+                                <form [formGroup]="userForm">
 
                                     <!--Form Group-->
                                     <div class="form-group">
                                         <label>full name</label>
-                                        <input type="text" name="name" value="" placeholder="Enter your name" required>
+                                        <input type="text" name="name" value="" placeholder="Enter your name"  formControlName="userName">
                                     </div>
                                     <!--Form Group-->
                                     <div class="form-group">
                                         <label>phone number</label>
                                         <input type="text" name="phone" value=""
-                                            placeholder="Enter your phone number" required>
+                                            placeholder="Enter your phone number"  formControlName="userMobile">
                                     </div>
                                     <!--Form Group-->
                                     <!-- <div class="form-group">
@@ -460,11 +463,11 @@
                                     <!--Form Group-->
                                     <div class="form-group">
                                         <label>message</label>
-                                        <textarea name="message" placeholder="Write your message here"></textarea>
+                                        <textarea name="message" placeholder="Write your message here"  formControlName="userMessage"></textarea>
                                     </div>
                                     <div class="form-group">
                                         <button class="theme-btn btn-style-one" type="submit"
-                                            name="submit-form"><span class="txt">SUBMIT</span></button>
+                                            name="submit-form"><span class="txt"  (click)="submitUser()">SUBMIT</span></button>
                                     </div>
                                 </form>
 
@@ -533,7 +536,7 @@
     <div class="map-section">
         <div class="contact-map-area">
             <iframe class="contact-map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2136.986005919501!2d-73.9685579655238!3d40.75862446708152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258e4a1c884e5%3A0x24fe1071086b36d5!2sThe%20Atrium!5e0!3m2!1sen!2sbd!4v1585132512970!5m2!1sen!2sbd"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52099.10158883535!2d78.30475483657243!3d17.444053474511907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93a276decedf%3A0x2c12e79e6f9344e2!2sGachibowli%2C%20Hyderabad%2C%20Telangana!5e1!3m2!1sen!2sin!4v1674111916294!5m2!1sen!2sin"
                 allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
     </div>

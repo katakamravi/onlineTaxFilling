@@ -151,7 +151,7 @@
         </div>
     </div>
 
-    <section class="brands-logo">
+    <!-- <section class="brands-logo">
         <div class="container">
         <h2><strong>Brands</strong> Empowered</h2>
         <hr class="hr">
@@ -170,7 +170,7 @@
         <li><img src="https://tax2win.in/assets-new/img/clients-logos/benefitHub_logo.png" alt="Benefit Hub" title="Benefit Hub" width="135" height="28"></li>
         </ul>
         </div>
-        </section>
+        </section> -->
 
     <!-- Reputation Section Two -->
     <div class="reputation-section-two">
@@ -224,22 +224,21 @@
                             <h5>free consulation</h5>
 
                             <div class="consult-form">
-                                <form method="post"
-                                    action="https://htmldemo.hasthemes.com/consultix/consultix/donate.html">
+                                <form [formGroup]="userForm">
 
                                     <!--Form Group-->
                                     <div class="form-group">
                                         <label>full name</label>
-                                        <input type="text" name="name" value="" placeholder="Jason Staham" required>
+                                        <input type="text" name="name" value="" placeholder="Enter your name"  formControlName="userName">
                                     </div>
                                     <!--Form Group-->
                                     <div class="form-group">
                                         <label>phone number</label>
                                         <input type="text" name="phone" value=""
-                                            placeholder="Enter your phone number" required>
+                                            placeholder="Enter your phone number"  formControlName="userMobile">
                                     </div>
                                     <!--Form Group-->
-                                    <div class="form-group">
+                                    <!-- <div class="form-group">
                                         <label>topics</label>
                                         <select class="custom-select-box">
                                             <option>Choose topic</option>
@@ -248,15 +247,15 @@
                                             <option>Topic 03</option>
                                             <option>Topic 04</option>
                                         </select>
-                                    </div>
+                                    </div> -->
                                     <!--Form Group-->
                                     <div class="form-group">
                                         <label>message</label>
-                                        <textarea name="message" placeholder="Write your message here"></textarea>
+                                        <textarea name="message" placeholder="Write your message here"  formControlName="userMessage"></textarea>
                                     </div>
                                     <div class="form-group">
                                         <button class="theme-btn btn-style-one" type="submit"
-                                            name="submit-form"><span class="txt">send your messenger</span></button>
+                                            name="submit-form"><span class="txt"  (click)="submitUser()">SUBMIT</span></button>
                                     </div>
                                 </form>
 

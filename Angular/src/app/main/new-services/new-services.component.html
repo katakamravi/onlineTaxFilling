@@ -31,7 +31,7 @@
 			<div class="content-box">
 				<h2><span>{{services?.title}}</span></h2>
 				<div class="text">{{services?.description}}</div>
-				<a href="javascript:void(0)" class="theme-btn btn-style-one" (click)="onGoToDetail()"><span class="txt">read more</span></a>
+				<!-- <a href="javascript:void(0)" class="theme-btn btn-style-one" (click)="onGoToDetail()"><span class="txt">read more</span></a> -->
 				
 				<!-- Lower Box -->
 				<div class="lower-box clearfix">
@@ -62,7 +62,7 @@
 									<p>Capitalise on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional base clickthroughs.</p>
 								</div>
 								<div class="row" *ngFor="let documents of services?.DocumentsRequired">
-										<div class="col-md-6">
+										<div class="col-md-8">
 										<ul class="check-list">
 											<li><i class="icofont-check"></i>{{documents.name}}</li>
 											<!-- <li> <i class="icofont-check"></i>Shoulders</li>
@@ -106,7 +106,7 @@
 											<input type="text" name="email" value="" placeholder="Enter your Email"  formControlName="userEmail">
 										</div>
 									<!--Form Group-->
-									<div class="form-group">
+									<!-- <div class="form-group">
 										<label>State</label>
 										<select class="custom-select-box" formControlName="state">
 											<option>Choose State</option>
@@ -115,6 +115,12 @@
 											<option>Topic 03</option>
 											<option>Topic 04</option>
 										</select>
+									</div> -->
+									<div class="checkbox">
+										<label>
+										  <input type="checkbox" formControlName="userTerms"> Before Proceeding, you agree to the <a data-toggle="modal" 
+										  data-target="#terms-condition" [routerLink]="['/termsandconditions']">Terms and Conditions</a>
+										</label>
 									</div>
 									<div class="text-center mt-4 mb-4">
 										<button class=" btn-style-one" type="submit" name="submit-form" (click)="submitUser()"><span class="txt">submit</span></button>

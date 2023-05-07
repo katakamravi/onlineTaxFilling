@@ -45,14 +45,24 @@ router.post('/email', function (req, res, next) {
 //     refresh_token: "1//04jt5I457D8jyCgYIARAAGAQSNwF-L9IrJsvwUIanxgvL5RKNeQ75S_vhKn-bvQRFUJg9tm6SQl7-VfebKG_hqUg15n3E68djc-E"
 // });
 // const accessToken = oauth2Client.getAccessToken();
-var smtptransport = nodemailer.createTransport(smtpTransport({
+// var smtptransport = nodemailer.createTransport(smtpTransport({
+//   service: 'gmail',
+//   host: 'smtp.gmail.com',
+//   auth: {
+//     user: 'katakamravishankar@gmail.com', // generated ethereal user
+//     pass: '9848640520', // generated ethereal password
+//   },
+// }));
+
+
+let transporter = nodemailer.createTransport({
   service: 'gmail',
-  host: 'smtp.gmail.com',
   auth: {
-    user: 'katakamravishankar@gmail.com', // generated ethereal user
-    pass: '9848640520', // generated ethereal password
+    user: 'katakamravishankaroffice@gmail.com',
+    pass: 'vrklubzqwlbsnnfx', 
   },
-}));
+});
+
 
 
 // let smtpTransport = nodemailer.createTransport({
@@ -77,9 +87,9 @@ var smtptransport = nodemailer.createTransport(smtpTransport({
 // });
 
 const mailOptions = {
-    from: "katakamravishankar@gmail.com",
-    to: `${req.body.userEmail}`,
-    subject: "Testing Mail",
+  from: "Letsconnect@fileyouritr.com",
+  to: `Letsconnect@fileyouritr.com`,
+    subject: "User Details",
     generateTextFromHTML: true,
     html: `<h1>Contact details</h1>
     <h2> name:${req.body.userName} </h2><br>
@@ -87,7 +97,7 @@ const mailOptions = {
     <h2> phonenumber:${req.body.userMobile} </h2><br>`
 };
 
-smtptransport.sendMail(mailOptions, (error, response) => {
+transporter.sendMail(mailOptions, (error, response) => {
     if(error) next(error);
     res.json({"success": true, Data: response})
     smtptransport.close();
